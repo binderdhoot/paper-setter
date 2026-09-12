@@ -1,0 +1,2280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{ color-scheme: light dark; }
+  body{ margin:0; }
+  img{ max-width:100%; }
+  [hidden]{ display:none !important; }
+</style>
+<title>Paper Setter — Free Question Paper &amp; Answer Key Generator</title>
+<meta name="description" content="Build multiple-choice, short-answer, long-answer and passage-based question papers in your browser, with an automatic answer key. Export to PDF or a real .docx file. Free, no sign-up, nothing uploaded to a server.">
+<meta name="keywords" content="question paper generator, question paper maker, exam paper generator, test paper maker, MCQ generator, answer key generator, worksheet generator, free question paper maker, online exam creator, question bank builder">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Paper Setter">
+<meta name="google-site-verification" content="3FG0G5N7Lp86V3BuUQg006K-mki4qDBNL1JYmyFkpBc" />
+<meta name="theme-color" content="#2f4b8f">
+<link rel="canonical" href="https://binderdhoot.github.io/paper-setter/">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/app-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Paper Setter">
+<meta property="og:title" content="Paper Setter — Free Question Paper & Answer Key Generator">
+<meta property="og:description" content="Build MCQ, short-answer, long-answer and passage-based question papers with an automatic answer key. Export to PDF or .docx. Free, no sign-up required.">
+<meta property="og:url" content="https://binderdhoot.github.io/paper-setter/">
+<meta property="og:image" content="https://binderdhoot.github.io/paper-setter/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Paper Setter — Free Question Paper & Answer Key Generator">
+<meta name="twitter:description" content="Build MCQ, short-answer, long-answer and passage-based question papers with an automatic answer key. Export to PDF or .docx. Free, no sign-up required.">
+<meta name="twitter:image" content="https://binderdhoot.github.io/paper-setter/assets/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Paper Setter",
+  "alternateName": "Question Paper Generator",
+  "url": "https://binderdhoot.github.io/paper-setter/",
+  "image": "https://binderdhoot.github.io/paper-setter/assets/og-image.png",
+  "description": "A free, browser-based question paper builder for teachers and schools. Create multiple-choice, short-answer, long-answer and passage-based questions, attach diagrams, and export a formatted question paper plus a matching answer key as a PDF or .docx file — no sign-up, nothing uploaded to a server.",
+  "author": { "@type": "Person", "name": "Balwinder", "url": "https://github.com/binderdhoot" },
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any (runs in a web browser)",
+  "browserRequirements": "Requires a modern browser with JavaScript enabled",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "featureList": [
+    "Multiple-choice, short-answer, long-answer and passage-based questions",
+    "Automatic answer key generation",
+    "Attach images and diagrams to questions",
+    "Live formatted preview",
+    "Export to PDF",
+    "Export to Word (.docx)",
+    "Autosaves in the browser — no account needed"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Paper Setter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Paper Setter is a free, browser-based question paper generator for teachers and schools. You add multiple-choice, short-answer, long-answer, or passage-based questions, and it builds a formatted, printable question paper plus a matching answer key automatically." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Paper Setter free to use?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Paper Setter is completely free to use, with no sign-up and no limit on the number of question papers you can create." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to create an account?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. You can build and export question papers without signing up. Your work is autosaved in your browser's local storage on your own device, so it's there when you come back — but it isn't backed up anywhere else, so clearing your browser data will remove it." }
+    },
+    {
+      "@type": "Question",
+      "name": "What question types does it support?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Multiple choice (2–6 options), short answer, long answer, and passage-based questions with nested sub-questions of any of those types." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I add images or diagrams to a question?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Any question can have an attached image — a diagram, graph, or photo — with an optional caption, and it will appear in both the printed paper and the exported files." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it generate an answer key automatically?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Toggle the preview between \"Question Paper\" and \"Answer Key\" views — the answer key highlights correct MCQ options and shows the model answer you entered for short and long answer questions." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I export the paper as a PDF?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Use \"Export PDF\", which opens your browser's print dialog — choose \"Save as PDF\" as the destination." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I export the paper as a Word (.docx) file?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. \"Download .docx\" generates a real, ready-to-open Word file directly in your browser, fully formatted with images, options, and answer-key styling — no paste step required." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my data uploaded to a server?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Paper Setter runs entirely in your browser. Your paper details and questions are saved only in your browser's local storage on your own device and are never sent to a server." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work for any subject, class, or exam board?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Paper Setter is subject- and syllabus-agnostic — you fill in the class, subject, marks, and questions, so it works for any curriculum or exam board." }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --paper:#f2f3f7; --surface:#ffffff; --surface-2:#eaecf2; --border:#d7dae3;
+    --ink:#1b2130; --ink-muted:#5c6474;
+    --accent:#2f4b8f; --accent-strong:#1f3568; --accent-soft:#e4e9f7;
+    --mark:#a83a31; --mark-soft:#f7e3e0;
+    --good:#2f7d5a; --good-soft:#e1f2e9;
+    --warn:#a3701a; --warn-soft:#f8ecd6;
+    --shadow:0 1px 2px rgba(27,33,48,.07), 0 10px 26px -14px rgba(27,33,48,.24);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#12141c; --surface:#1a1d28; --surface-2:#20232f; --border:#343a4c;
+      --ink:#e8eaf1; --ink-muted:#9aa0b4;
+      --accent:#8aa5ef; --accent-strong:#b3c4f5; --accent-soft:#222c48;
+      --mark:#e18a80; --mark-soft:#3a2624;
+      --good:#82d3ab; --good-soft:#1c3327;
+      --warn:#e7bc70; --warn-soft:#3a2e15;
+      --shadow:0 1px 2px rgba(0,0,0,.45), 0 10px 26px -14px rgba(0,0,0,.6);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#12141c; --surface:#1a1d28; --surface-2:#20232f; --border:#343a4c;
+    --ink:#e8eaf1; --ink-muted:#9aa0b4;
+    --accent:#8aa5ef; --accent-strong:#b3c4f5; --accent-soft:#222c48;
+    --mark:#e18a80; --mark-soft:#3a2624;
+    --good:#82d3ab; --good-soft:#1c3327;
+    --warn:#e7bc70; --warn-soft:#3a2e15;
+    --shadow:0 1px 2px rgba(0,0,0,.45), 0 10px 26px -14px rgba(0,0,0,.6);
+  }
+
+  *{box-sizing:border-box;}
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.01ms !important; transition-duration:.01ms !important;}
+  }
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:"IBM Plex Sans",system-ui,sans-serif;
+    padding:20px clamp(16px,4vw,32px) 64px;
+  }
+  h1,h2,h3{font-family:"Source Serif 4",Georgia,serif; text-wrap:balance; margin:0;}
+  input,textarea,select,button{font-family:inherit; color:inherit;}
+  .num{font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums;}
+  .icon{display:inline-block; vertical-align:-3px; flex:none;}
+
+  .app{max-width:1280px; margin:0 auto; display:flex; flex-direction:column; gap:14px;}
+
+  .topbar{
+    display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;
+  }
+  .brand{display:flex; align-items:center; gap:12px;}
+  .brand-mark{ width:42px; height:42px; flex:none; display:block; }
+  .brand h1{font-size:1.35rem; font-weight:600; line-height:1.2;}
+  .brand-sub{font-size:.78rem; color:var(--ink-muted); letter-spacing:.03em; text-transform:uppercase;}
+  .topbar-actions{display:flex; gap:10px; flex-wrap:wrap;}
+  .tagline{ margin-top:-8px; font-size:.86rem; color:var(--ink-muted); line-height:1.5; max-width:64ch; }
+
+  .btn{
+    border:1px solid transparent; border-radius:8px; padding:9px 16px; font-size:.88rem;
+    font-weight:600; cursor:pointer; transition:transform .06s ease, filter .15s ease, background .15s ease;
+    display:inline-flex; align-items:center; gap:7px; white-space:nowrap;
+  }
+  .btn:active{transform:translateY(1px);}
+  .btn-primary{background:var(--accent); color:#fff; box-shadow:var(--shadow);}
+  .btn-primary:hover{filter:brightness(1.08);}
+  .btn-ghost{background:var(--surface); border-color:var(--border); color:var(--ink);}
+  .btn-ghost:hover{background:var(--surface-2);}
+  .btn-danger{background:var(--mark); color:#fff; box-shadow:var(--shadow);}
+  .btn-danger:hover{filter:brightness(1.08);}
+  .btn-small{padding:5px 10px; font-size:.76rem; border-radius:6px;}
+  .btn:focus-visible, input:focus-visible, textarea:focus-visible, button:focus-visible{
+    outline:2px solid var(--accent); outline-offset:2px;
+  }
+
+  .mobile-tabs{display:none;}
+  @media screen and (max-width:860px){
+    .mobile-tabs{
+      display:flex; gap:6px; background:var(--surface); border:1px solid var(--border);
+      padding:4px; border-radius:10px; position:sticky; top:8px; z-index:8; box-shadow:var(--shadow);
+    }
+    .mobile-tab{
+      flex:1; display:flex; align-items:center; justify-content:center; gap:6px; border:none;
+      background:transparent; padding:9px; border-radius:7px; font-size:.84rem; font-weight:600;
+      color:var(--ink-muted); cursor:pointer;
+    }
+    .mobile-tab.active{background:var(--accent); color:#fff;}
+    body[data-mobile-view="build"] .preview-pane{display:none;}
+    body[data-mobile-view="preview"] .builder{display:none;}
+  }
+
+  .layout{display:grid; grid-template-columns:minmax(300px,380px) 1fr; gap:18px; align-items:start;}
+  @media screen and (max-width:860px){ .layout{grid-template-columns:1fr;} }
+
+  .panel{
+    background:var(--surface); border:1px solid var(--border); border-radius:14px;
+    padding:16px; box-shadow:var(--shadow);
+  }
+  .panel h2{font-size:1rem; font-weight:600; margin-bottom:12px; display:flex; align-items:center;}
+  .builder{display:flex; flex-direction:column; gap:16px;}
+
+  .step-badge{
+    display:inline-flex; align-items:center; justify-content:center; width:20px; height:20px;
+    border-radius:50%; background:var(--accent-soft); color:var(--accent-strong);
+    font-family:"IBM Plex Mono",monospace; font-size:.68rem; font-weight:700; margin-right:9px; flex:none;
+  }
+
+  label{display:flex; flex-direction:column; gap:5px; font-size:.82rem; color:var(--ink-muted); font-weight:500;}
+  input[type="text"],input:not([type]),input[type="number"],input[type="date"],textarea{
+    background:var(--surface-2); border:1px solid var(--border); border-radius:8px;
+    padding:9px 10px; font-size:.92rem; color:var(--ink); width:100%; resize:vertical;
+    transition:border-color .12s ease, box-shadow .12s ease;
+  }
+  input:hover,textarea:hover{border-color:var(--ink-muted);}
+  input.input-error,textarea.input-error{border-color:var(--mark); box-shadow:0 0 0 3px var(--mark-soft);}
+  .hint.input-error{color:var(--mark); font-weight:600;}
+  .field-grid{display:grid; grid-template-columns:1fr 1fr; gap:10px 12px;}
+  .field-grid label:first-child{grid-column:1 / -1;}
+  @media screen and (max-width:420px){ .field-grid{grid-template-columns:1fr;} }
+
+  .marks-meter{margin-top:14px;}
+  .marks-meter-bar{height:8px; border-radius:99px; background:var(--surface-2); overflow:hidden; border:1px solid var(--border);}
+  .marks-meter-fill{height:100%; background:var(--accent); width:0%; transition:width .25s ease, background .25s ease;}
+  .marks-meter-fill.state-good{background:var(--good);}
+  .marks-meter-fill.state-warn{background:var(--warn);}
+  .marks-meter-status{
+    font-size:.78rem; color:var(--ink-muted); margin-top:7px; display:flex; align-items:center; gap:6px; font-weight:500;
+  }
+  .marks-meter-status.state-good{color:var(--good);}
+  .marks-meter-status.state-warn{color:var(--warn);}
+  .marks-meter-status b{color:inherit;}
+
+  .type-tabs{display:flex; gap:6px; margin-bottom:12px; background:var(--surface-2); padding:4px; border-radius:9px;}
+  .type-tab{
+    flex:1; border:none; background:transparent; padding:8px 6px; border-radius:6px;
+    font-size:.78rem; font-weight:600; color:var(--ink-muted); cursor:pointer;
+    display:flex; flex-direction:column; align-items:center; gap:4px; transition:background .12s ease, color .12s ease;
+  }
+  .type-tab:hover{color:var(--ink);}
+  .type-tab.active{background:var(--surface); color:var(--accent-strong); box-shadow:var(--shadow);}
+
+  #questionForm{display:flex; flex-direction:column; gap:12px;}
+  .mcq-options{display:flex; flex-direction:column; gap:8px;}
+  .mcq-option-row{display:flex; align-items:center; gap:8px; border-radius:8px; padding:2px; transition:background .12s ease;}
+  .mcq-option-row.is-correct{background:var(--good-soft);}
+  .mcq-option-row input[type="radio"]{accent-color:var(--good); width:16px; height:16px; flex:none;}
+  .mcq-option-row .opt-letter{
+    font-family:"IBM Plex Mono",monospace; font-weight:600; color:var(--ink-muted); width:16px; flex:none; text-align:center;
+  }
+  .mcq-option-row input[type="text"]{flex:1;}
+  .mcq-option-row button{flex:none;}
+  .mcq-options-actions{display:flex; justify-content:space-between; align-items:center;}
+  .hint{font-size:.74rem; color:var(--ink-muted); font-weight:400;}
+  .form-error{
+    display:flex; align-items:center; gap:6px; font-size:.78rem; color:var(--mark);
+    background:var(--mark-soft); border-radius:7px; padding:7px 10px;
+  }
+  .image-field{display:flex; flex-direction:column; gap:8px;}
+  .image-input-row{display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
+  .image-preview-wrap{display:flex; align-items:center; gap:10px;}
+  .image-preview-wrap img{
+    width:64px; height:64px; object-fit:cover; border-radius:8px; border:1px solid var(--border);
+    background:var(--surface-2); flex:none;
+  }
+  #passageBlock{display:flex; flex-direction:column; gap:10px;}
+  .subq-summary{font-size:.8rem; color:var(--ink-muted);}
+  .subq-summary b{color:var(--ink); font-family:"IBM Plex Mono",monospace;}
+  .subq-list{display:flex; flex-direction:column; gap:8px;}
+  .subq-editor{
+    border:1px dashed var(--border); border-radius:10px; padding:12px;
+    display:flex; flex-direction:column; gap:10px; background:var(--surface-2);
+  }
+  .marks-input{max-width:120px;}
+  .form-row{display:flex; gap:12px; align-items:flex-end; flex-wrap:wrap;}
+  .form-actions{display:flex; gap:10px;}
+
+  .question-list{display:flex; flex-direction:column; gap:8px; max-height:420px; overflow-y:auto; padding-right:2px;}
+  @keyframes qFadeIn{from{opacity:0; transform:translateY(4px);} to{opacity:1; transform:none;}}
+  .q-item{
+    border:1px solid var(--border); border-radius:10px; padding:10px 12px; background:var(--surface-2);
+    display:flex; flex-direction:column; gap:6px; animation:qFadeIn .16s ease both;
+  }
+  .q-item-top{display:flex; align-items:flex-start; justify-content:space-between; gap:8px;}
+  .q-badges{display:flex; gap:6px; align-items:center; flex-wrap:wrap;}
+  .badge{
+    font-size:.68rem; font-weight:700; letter-spacing:.03em; text-transform:uppercase;
+    padding:2px 7px; border-radius:99px; background:var(--accent-soft); color:var(--accent-strong);
+  }
+  .badge.marks{background:var(--mark-soft); color:var(--mark);}
+  .badge.img-badge{display:inline-flex; align-items:center; gap:3px;}
+  .q-text{font-size:.85rem; line-height:1.4; color:var(--ink);
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;}
+  .q-actions{display:flex; gap:3px; flex:none;}
+  .q-actions button{
+    background:transparent; border:1px solid var(--border); border-radius:6px; width:26px; height:26px;
+    display:flex; align-items:center; justify-content:center; cursor:pointer; color:var(--ink-muted);
+    transition:background .12s ease, color .12s ease;
+  }
+  .q-actions button:hover{background:var(--surface); color:var(--ink);}
+  .q-actions button.danger:hover{background:var(--mark-soft); color:var(--mark); border-color:transparent;}
+  .q-actions button:disabled{opacity:.35; cursor:not-allowed;}
+  .q-actions button:disabled:hover{background:transparent; color:var(--ink-muted);}
+  .empty-note{
+    font-size:.82rem; color:var(--ink-muted); text-align:center; padding:22px 6px;
+    display:flex; flex-direction:column; align-items:center; gap:8px;
+  }
+
+  .preview-pane{display:flex; flex-direction:column; gap:10px;}
+  .preview-eyebrow{
+    display:flex; align-items:center; font-size:.82rem; font-weight:600; color:var(--ink-muted);
+  }
+  .preview-toolbar{display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;}
+  .view-toggle{display:flex; gap:6px; background:var(--surface); border:1px solid var(--border); padding:4px; border-radius:9px; box-shadow:var(--shadow);}
+  .view-btn{border:none; background:transparent; padding:7px 14px; border-radius:6px; font-size:.82rem; font-weight:600; color:var(--ink-muted); cursor:pointer; transition:background .12s ease, color .12s ease;}
+  .view-btn.active{background:var(--accent); color:#fff;}
+  .sample-note{
+    display:flex; align-items:center; justify-content:space-between; gap:10px;
+    background:var(--warn-soft); color:var(--warn); border:1px solid transparent; border-radius:9px;
+    padding:8px 12px; font-size:.8rem;
+  }
+  .sample-note button{background:none; border:none; color:inherit; cursor:pointer; display:flex; padding:2px;}
+
+  .paper-sheet{
+    background:#ffffff; color:#1b2130; border-radius:10px; box-shadow:var(--shadow);
+    border:1px solid var(--border); padding:clamp(20px,4vw,48px); font-family:"Source Serif 4",Georgia,serif;
+    width:100%; max-width:100%; box-sizing:border-box; overflow-wrap:break-word;
+  }
+  /* Applied only for the instant html2canvas captures the sheet for PDF export, so the
+     rasterized page looks like a clean page rather than an on-screen card. */
+  #printArea.pdf-capture{ box-shadow:none; border:none; border-radius:0; padding:0; }
+  .ps-header{text-align:center; border-bottom:2px solid #1b2130; padding-bottom:14px; margin-bottom:14px;}
+  .ps-header h2{font-size:1.5rem; font-weight:700; overflow-wrap:break-word;}
+  .ps-meta{
+    display:flex; flex-wrap:wrap; justify-content:center; gap:6px 18px; margin-top:10px;
+    font-family:"IBM Plex Sans",sans-serif; font-size:.82rem; color:#4a4f5c;
+  }
+  .ps-meta b{color:#1b2130; font-family:"IBM Plex Mono",monospace;}
+  .ps-instructions{
+    font-family:"IBM Plex Sans",sans-serif; font-size:.78rem; color:#585e6b; font-style:italic;
+    text-align:center; margin-bottom:22px;
+  }
+  .ps-section{margin-bottom:22px;}
+  .ps-section-title{
+    display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline; gap:4px 10px;
+    font-size:.95rem; font-weight:700; text-transform:uppercase; letter-spacing:.04em;
+    border-bottom:1px solid #d7dae3; padding-bottom:6px; margin-bottom:14px; font-family:"IBM Plex Sans",sans-serif;
+  }
+  .ps-section-title > span:first-child{min-width:0; flex:1 1 auto; overflow-wrap:break-word;}
+  .ps-section-marks{font-family:"IBM Plex Mono",monospace; font-weight:600; font-size:.76rem; color:#8a8f9c; text-transform:none; letter-spacing:0; flex:none; white-space:nowrap;}
+  .ps-q{display:flex; gap:10px; margin-bottom:16px; align-items:baseline;}
+  .ps-q-num{font-family:"IBM Plex Mono",monospace; font-weight:600; flex:none; width:1.6em;}
+  .ps-q-body{flex:1; min-width:0;}
+  .ps-row{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline; gap:4px 10px;}
+  .ps-q-text{font-size:1rem; line-height:1.55; flex:1 1 220px; min-width:0; overflow-wrap:break-word;}
+  .ps-q-marks{
+    font-family:"IBM Plex Mono",monospace; font-size:.78rem; color:#a83a31; font-weight:600;
+    white-space:nowrap; flex:none;
+  }
+  .ps-options{list-style:none; padding:0; margin:10px 0 0; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:6px 16px; font-family:"IBM Plex Sans",sans-serif; font-size:.92rem;}
+  @media (max-width:520px){ .ps-options{grid-template-columns:minmax(0,1fr);} }
+  .ps-options li{display:flex; gap:6px; min-width:0; overflow-wrap:break-word;}
+  .ps-options li.correct{color:#2f7d5a; font-weight:600;}
+  .ps-opt-letter{font-family:"IBM Plex Mono",monospace; font-weight:600;}
+  .ps-answer-box{
+    margin-top:8px; background:#f7e3e0; border-left:3px solid #a83a31; border-radius:4px;
+    padding:8px 12px; font-family:"IBM Plex Sans",sans-serif; font-size:.84rem; color:#5c2420;
+  }
+  .ps-answer-box em{color:#8a8f9c; font-style:italic;}
+  .ps-answer-label{font-weight:700; text-transform:uppercase; font-size:.68rem; letter-spacing:.04em; display:block; margin-bottom:3px;}
+  .ps-image-wrap{margin-top:12px;}
+  .ps-image{max-width:100%; max-height:320px; display:block; border:1px solid #d7dae3; border-radius:4px;}
+  .ps-image-caption{font-family:"IBM Plex Sans",sans-serif; font-size:.76rem; color:#5c6474; font-style:italic; margin-top:4px;}
+  .ps-passage-box{
+    background:#f7f6f1; border:1px solid #d7dae3; border-left:3px solid #2f4b8f; border-radius:4px;
+    padding:12px 16px; margin:10px 0 14px; font-size:.97rem; line-height:1.65;
+  }
+  .ps-passage-intro{font-family:"IBM Plex Sans",sans-serif; font-size:.8rem; font-style:italic; color:#5c6474; margin:10px 0 4px;}
+  .ps-subq-list{margin-left:4px;}
+  .ps-subq{display:flex; gap:8px; margin:0 0 14px 22px; align-items:baseline; min-width:0;}
+  .ps-subq-num{font-family:"IBM Plex Mono",monospace; font-weight:600; flex:none; width:2.2em;}
+  .ps-footer{
+    border-top:1px solid #d7dae3; margin-top:22px; padding-top:12px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:4px 10px;
+    font-family:"IBM Plex Sans",sans-serif; font-size:.78rem; color:#5c6474;
+  }
+  .ps-empty{text-align:center; color:#8a8f9c; font-family:"IBM Plex Sans",sans-serif; padding:40px 10px;}
+
+  .faq-section{
+    margin-top:44px; padding:40px clamp(16px,4vw,32px) 48px;
+    background:var(--surface-2); border-top:1px solid var(--border);
+  }
+  .faq-inner{max-width:980px; margin:0 auto;}
+  .faq-section h2{font-size:1.4rem; font-weight:600; text-align:center;}
+  .faq-sub{text-align:center; font-size:.86rem; color:var(--ink-muted); margin:6px 0 26px;}
+  .faq-list{columns:2; column-gap:14px;}
+  @media (max-width:720px){ .faq-list{columns:1;} }
+  .faq-list details{
+    break-inside:avoid; background:var(--surface); border:1px solid var(--border); border-radius:10px;
+    padding:12px 16px; margin-bottom:12px;
+  }
+  .faq-list summary{
+    cursor:pointer; font-weight:600; font-size:.92rem; color:var(--ink); list-style:none;
+    display:flex; align-items:center; justify-content:space-between; gap:10px;
+  }
+  .faq-list summary::-webkit-details-marker{display:none;}
+  .faq-list summary::after{content:"+"; color:var(--ink-muted); font-weight:400; flex:none;}
+  .faq-list details[open] summary::after{content:"\2212";}
+  .faq-list details p{margin:10px 0 0; font-size:.86rem; color:var(--ink-muted); line-height:1.55;}
+
+  .site-footer{padding:20px clamp(16px,4vw,32px) 32px; text-align:center;}
+  .site-footer p{font-size:.8rem; color:var(--ink-muted); margin:0;}
+  .site-footer a{color:var(--ink-muted); text-decoration:underline; text-underline-offset:2px;}
+  .site-footer a:hover{color:var(--accent);}
+
+  .toast{
+    position:fixed; left:50%; bottom:22px; transform:translateX(-50%); z-index:50;
+    background:var(--ink); color:var(--paper); padding:10px 18px; border-radius:99px;
+    font-size:.84rem; font-weight:600; box-shadow:var(--shadow); display:flex; align-items:center; gap:8px;
+    animation:toast-in .18s ease;
+  }
+  @keyframes toast-in{from{opacity:0; transform:translate(-50%,8px);} to{opacity:1; transform:translate(-50%,0);}}
+
+  .modal-overlay{
+    position:fixed; inset:0; z-index:60; background:rgba(10,12,20,.5);
+    display:flex; align-items:center; justify-content:center; padding:20px;
+    animation:modal-fade .15s ease;
+  }
+  @keyframes modal-fade{from{opacity:0;} to{opacity:1;}}
+  .modal-box{
+    background:var(--surface); border:1px solid var(--border); border-radius:14px;
+    box-shadow:var(--shadow); padding:22px; max-width:400px; width:100%;
+    animation:modal-pop .15s ease;
+  }
+  @keyframes modal-pop{from{opacity:0; transform:translateY(6px) scale(.98);} to{opacity:1; transform:none;}}
+  .modal-box h3{font-size:1.1rem; font-weight:600; margin-bottom:8px;}
+  .modal-box p{font-size:.88rem; color:var(--ink-muted); line-height:1.5; margin-bottom:20px;}
+  .modal-actions{display:flex; justify-content:flex-end; gap:10px;}
+
+  @page{ margin: 14mm 12mm; }
+
+  @media print{
+    html, body{background:#fff !important; padding:0 !important; margin:0 !important; width:auto !important;}
+    .topbar, .builder, .preview-toolbar, .sample-note, .mobile-tabs, .preview-eyebrow, .toast, .tagline, .faq-section, .modal-overlay, .site-footer{display:none !important;}
+    .layout{display:block !important;}
+    .preview-pane{display:block !important;}
+    .paper-sheet{
+      box-shadow:none !important; border:none !important; border-radius:0 !important;
+      /* Small, not the primary source of whitespace: @page margin (below) repeats on every
+         printed page, but this padding only ever appears once (at the very top/bottom of the
+         whole flowing document), so a large value here made page 1 look generously margined
+         and every later page look "attached" to the paper edge by comparison. Keep this just
+         as a thin safety net for print pipelines that don't honor @page at all. */
+      padding:3mm !important; display:block !important; width:100% !important; max-width:100% !important;
+    }
+    .ps-image{max-height:none !important;}
+    .app{max-width:none !important; width:100% !important; margin:0 !important;}
+  }
+</style>
+</head>
+<body>
+
+
+<div class="app" data-noc>
+  <header class="topbar">
+    <div class="brand">
+      <img class="brand-mark" src="assets/logo-mark.png" alt="Paper Setter logo">
+      <div>
+        <h1 id="brandTitle">Paper Setter</h1>
+        <div class="brand-sub">Free question paper &amp; answer key generator</div>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button class="btn btn-ghost" id="clearAllBtn" type="button"></button>
+      <button class="btn btn-ghost" id="downloadDocxBtn" type="button"></button>
+      <button class="btn btn-primary" id="printBtn" type="button"></button>
+    </div>
+  </header>
+
+  <p class="tagline">Build multiple-choice, short-answer, long-answer and passage-based question papers with an automatic answer key — free, no sign-up, and nothing is uploaded to a server.</p>
+
+  <div class="mobile-tabs" id="mobileTabs" role="tablist" aria-label="Section">
+    <button type="button" class="mobile-tab active" data-target="build" role="tab" aria-selected="true"></button>
+    <button type="button" class="mobile-tab" data-target="preview" role="tab" aria-selected="false"></button>
+  </div>
+
+  <div class="layout">
+    <aside class="builder">
+      <section class="panel">
+        <h2><span class="step-badge">1</span>Paper details</h2>
+        <div class="field-grid">
+          <label>Exam / paper title
+            <input id="paperTitle" placeholder="e.g. Unit Test 1 — Motion &amp; Force">
+          </label>
+          <label>Class
+            <input id="classField" placeholder="e.g. Class 10">
+          </label>
+          <label>Subject
+            <input id="subjectField" placeholder="e.g. Science">
+          </label>
+          <label>Max marks
+            <input type="number" id="maxMarks" min="0" placeholder="e.g. 50">
+          </label>
+          <label>Duration
+            <input id="duration" placeholder="e.g. 90 minutes">
+          </label>
+          <label>Date (optional)
+            <input type="date" id="examDate">
+          </label>
+        </div>
+        <div class="marks-meter">
+          <div class="marks-meter-bar"><div class="marks-meter-fill" id="marksFill"></div></div>
+          <div class="marks-meter-status" id="marksStatus"></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2 id="formHeading"><span class="step-badge">2</span>Add a question</h2>
+        <div class="type-tabs" id="typeTabs">
+          <button type="button" class="type-tab active" data-type="mcq"></button>
+          <button type="button" class="type-tab" data-type="short"></button>
+          <button type="button" class="type-tab" data-type="long"></button>
+          <button type="button" class="type-tab" data-type="passage"></button>
+        </div>
+        <form id="questionForm" novalidate>
+          <label><span id="qTextLabel">Question text</span>
+            <textarea id="qText" rows="3" required placeholder="Type the question here…"></textarea>
+          </label>
+
+          <div class="image-field">
+            <label style="margin-bottom:0;">Image <span class="hint">(optional — JPG, PNG, GIF, WebP, BMP or SVG, up to 8MB)</span></label>
+            <div class="image-input-row">
+              <input type="file" id="qImageInput" accept="image/*" hidden>
+              <button type="button" class="btn btn-ghost btn-small" id="qImageBtn"></button>
+              <span class="hint" id="qImageFileName">No image attached</span>
+            </div>
+            <div class="image-preview-wrap" id="imagePreviewWrap" hidden>
+              <img id="imagePreviewImg" alt="Question image preview">
+              <button type="button" class="btn btn-ghost btn-small" id="removeImageBtn">Remove image</button>
+            </div>
+            <label id="imageCaptionWrap" hidden>Image caption <span class="hint">(optional)</span>
+              <input type="text" id="qImageCaption" placeholder="e.g. Figure 1: Diagram of the water cycle">
+            </label>
+          </div>
+
+          <div id="mcqBlock">
+            <label style="margin-bottom:6px;">Options — mark the correct one</label>
+            <div class="mcq-options" id="mcqOptions"></div>
+            <div class="mcq-options-actions">
+              <span class="hint">2–6 options</span>
+              <button type="button" class="btn btn-ghost btn-small" id="addOptionBtn">+ Add option</button>
+            </div>
+          </div>
+
+          <label id="answerFieldWrap" hidden>Model answer <span class="hint">(optional, shown in the answer key)</span>
+            <textarea id="qAnswer" rows="2" placeholder="Model / expected answer…"></textarea>
+          </label>
+
+          <div id="passageBlock" hidden>
+            <div class="subq-summary">
+              <b id="subqCount">0</b> sub-question<span id="subqCountPlural">s</span> added — <b id="subqMarksTotal">0</b> marks total
+            </div>
+            <div class="subq-list" id="subqList"></div>
+            <div class="subq-editor">
+              <div class="type-tabs" id="subTypeTabs">
+                <button type="button" class="type-tab active" data-subtype="mcq"></button>
+                <button type="button" class="type-tab" data-subtype="short"></button>
+                <button type="button" class="type-tab" data-subtype="long"></button>
+              </div>
+              <label>Sub-question text
+                <textarea id="subqText" rows="2" placeholder="e.g. What does the passage suggest about…"></textarea>
+              </label>
+              <div id="subMcqBlock">
+                <label style="margin-bottom:6px;">Options — mark the correct one</label>
+                <div class="mcq-options" id="subMcqOptions"></div>
+                <div class="mcq-options-actions">
+                  <span class="hint">2–6 options</span>
+                  <button type="button" class="btn btn-ghost btn-small" id="subAddOptionBtn">+ Add option</button>
+                </div>
+              </div>
+              <label id="subAnswerFieldWrap" hidden>Model answer <span class="hint">(optional, shown in the answer key)</span>
+                <textarea id="subqAnswer" rows="2" placeholder="Model / expected answer…"></textarea>
+              </label>
+              <div class="form-row">
+                <label class="marks-input">Marks
+                  <input type="number" id="subqMarks" min="1" value="1">
+                </label>
+                <div class="form-actions">
+                  <button type="button" class="btn btn-ghost btn-small" id="addSubqBtn">+ Add sub-question</button>
+                  <button type="button" class="btn btn-ghost btn-small" id="cancelSubqEditBtn" hidden>Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-error" id="formError" hidden role="alert"></div>
+
+          <div class="form-row">
+            <div id="marksFieldWrap">
+              <label class="marks-input">Marks
+                <input type="number" id="qMarks" min="1" value="1" required>
+              </label>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary" id="addQuestionBtn">Add question</button>
+              <button type="button" class="btn btn-ghost" id="cancelEditBtn" hidden>Cancel</button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2><span class="step-badge">3</span>Questions (<span id="qCount">0</span>)</h2>
+        <div class="question-list" id="questionList"></div>
+      </section>
+    </aside>
+
+    <main class="preview-pane">
+      <div class="preview-eyebrow"><span class="step-badge">4</span>Preview &amp; print</div>
+      <div class="preview-toolbar">
+        <div class="view-toggle" id="viewToggle">
+          <button type="button" class="view-btn active" data-view="paper">Question paper</button>
+          <button type="button" class="view-btn" data-view="key">Answer key</button>
+        </div>
+      </div>
+      <div class="sample-note" id="sampleNote" hidden>
+        <span>You're viewing example content — edit any field or add your own questions, or use “Clear all” to start blank.</span>
+        <button type="button" id="dismissSample" aria-label="Dismiss"></button>
+      </div>
+      <div class="paper-sheet" id="printArea"></div>
+    </main>
+  </div>
+</div>
+
+<section class="faq-section" id="faq" aria-labelledby="faqHeading" data-noc>
+  <div class="faq-inner">
+  <h2 id="faqHeading">Frequently asked questions</h2>
+  <p class="faq-sub">Everything teachers usually ask before building their first paper.</p>
+  <div class="faq-list">
+    <details>
+      <summary>What is Paper Setter?</summary>
+      <p>Paper Setter is a free, browser-based question paper generator for teachers and schools. You add multiple-choice, short-answer, long-answer, or passage-based questions, and it builds a formatted, printable question paper plus a matching answer key automatically.</p>
+    </details>
+    <details>
+      <summary>Is Paper Setter free to use?</summary>
+      <p>Yes. Paper Setter is completely free to use, with no sign-up and no limit on the number of question papers you can create.</p>
+    </details>
+    <details>
+      <summary>Do I need to create an account?</summary>
+      <p>No. You can build and export question papers without signing up. Your work is autosaved in your browser's local storage on your own device, so it's there when you come back — but it isn't backed up anywhere else, so clearing your browser data will remove it.</p>
+    </details>
+    <details>
+      <summary>What question types does it support?</summary>
+      <p>Multiple choice (2–6 options), short answer, long answer, and passage-based questions with nested sub-questions of any of those types.</p>
+    </details>
+    <details>
+      <summary>Can I add images or diagrams to a question?</summary>
+      <p>Yes. Any question can have an attached image — a diagram, graph, or photo — with an optional caption, and it will appear in both the printed paper and the exported files.</p>
+    </details>
+    <details>
+      <summary>Does it generate an answer key automatically?</summary>
+      <p>Yes. Toggle the preview between "Question Paper" and "Answer Key" views — the answer key highlights correct MCQ options and shows the model answer you entered for short and long answer questions.</p>
+    </details>
+    <details>
+      <summary>Can I export the paper as a PDF?</summary>
+      <p>Yes. Use "Export PDF", which opens your browser's print dialog — choose "Save as PDF" as the destination.</p>
+    </details>
+    <details>
+      <summary>Can I export the paper as a Word (.docx) file?</summary>
+      <p>Yes. "Download .docx" generates a real, ready-to-open Word file directly in your browser, fully formatted with images, options, and answer-key styling — no paste step required.</p>
+    </details>
+    <details>
+      <summary>Is my data uploaded to a server?</summary>
+      <p>No. Paper Setter runs entirely in your browser. Your paper details and questions are saved only in your browser's local storage on your own device and are never sent to a server.</p>
+    </details>
+    <details>
+      <summary>Does it work for any subject, class, or exam board?</summary>
+      <p>Yes. Paper Setter is subject- and syllabus-agnostic — you fill in the class, subject, marks, and questions, so it works for any curriculum or exam board.</p>
+    </details>
+  </div>
+  </div>
+</section>
+
+<footer class="site-footer" data-noc>
+  <p>Built by <a href="https://github.com/binderdhoot" target="_blank" rel="noopener noreferrer">Balwinder</a> — <a href="https://github.com/binderdhoot/paper-setter" target="_blank" rel="noopener noreferrer">source on GitHub</a></p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<div class="modal-overlay" id="modalOverlay" hidden>
+  <div class="modal-box" role="alertdialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalMessage">
+    <h3 id="modalTitle"></h3>
+    <p id="modalMessage"></p>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-ghost" id="modalCancelBtn">Cancel</button>
+      <button type="button" class="btn btn-primary" id="modalConfirmBtn">Confirm</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/docx@9.7.1/dist/index.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.2/dist/jszip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js"></script>
+<script>
+(function(){
+  "use strict";
+  var STORAGE_KEY = "paperSetter.state.v1";
+  var SECTION_META = {
+    mcq:    { label: "Multiple Choice Questions" },
+    passage:{ label: "Passage-Based Questions" },
+    short:  { label: "Short Answer Questions" },
+    long:   { label: "Long Answer Questions" }
+  };
+  var TYPE_ORDER = ["mcq","passage","short","long"];
+  var TYPE_LABEL = { mcq:"MCQ", short:"Short", long:"Long", passage:"Passage" };
+
+  // ---- tiny inline icon set (stroke-based, 24x24 viewbox) ----
+  function icon(paths, size){
+    size = size || 16;
+    return '<svg class="icon" width="'+size+'" height="'+size+'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+paths+'</svg>';
+  }
+  var ICONS = {
+    chevronUp:  icon('<path d="M6 15l6-6 6 6"/>'),
+    chevronDown:icon('<path d="M6 9l6 6 6-6"/>'),
+    copy:       icon('<rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>'),
+    edit:       icon('<path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/>'),
+    trash:      icon('<path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/>'),
+    printer:    icon('<path d="M6 9V4h12v5"/><rect x="6" y="9" width="12" height="7" rx="1"/><path d="M6 16v4h12v-4"/>'),
+    warning:    icon('<path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>'),
+    check:      icon('<path d="M20 6 9 17l-5-5"/>'),
+    close:      icon('<path d="M18 6 6 18"/><path d="M6 6l12 12"/>'),
+    image:      icon('<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/>'),
+    clipboard:  icon('<rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3"/>'),
+    book:       icon('<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/>', 18),
+    build:      icon('<path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/>'),
+    doc:        icon('<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/>'),
+    list:       icon('<path d="M8 6h13"/><path d="M8 12h13"/><path d="M8 18h13"/><circle cx="3.2" cy="6" r="1"/><circle cx="3.2" cy="12" r="1"/><circle cx="3.2" cy="18" r="1"/>', 18),
+    shortLine:  icon('<line x1="4" y1="8" x2="15" y2="8"/><line x1="4" y1="16" x2="20" y2="16"/>', 18),
+    longLines:  icon('<line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="13" y2="18"/>', 18),
+    download:   icon('<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/>')
+  };
+
+  function uid(){ return "q" + Date.now().toString(36) + Math.random().toString(36).slice(2,7); }
+  function escapeHtml(s){
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
+    });
+  }
+  function nl2br(s){ return escapeHtml(s).replace(/\n/g,"<br>"); }
+  // The date input stores/edits in the native ISO (YYYY-MM-DD) format required by
+  // <input type="date">, but the printed paper displays it as D-M-Y.
+  function formatDateDMY(iso){
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || "");
+    if(!m) return iso || "";
+    return m[3] + "-" + m[2] + "-" + m[1];
+  }
+
+  var PENDULUM_SVG = '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240">' +
+    '<rect width="400" height="240" fill="#ffffff"/>' +
+    '<circle cx="200" cy="26" r="4" fill="#1b2130"/>' +
+    '<path d="M92 84 Q200 220 308 84" fill="none" stroke="#a9adba" stroke-width="1.5" stroke-dasharray="4 4"/>' +
+    '<line x1="200" y1="26" x2="92" y2="84" stroke="#1b2130" stroke-width="2"/>' +
+    '<line x1="200" y1="26" x2="200" y2="190" stroke="#1b2130" stroke-width="2"/>' +
+    '<line x1="200" y1="26" x2="308" y2="84" stroke="#1b2130" stroke-width="2"/>' +
+    '<circle cx="92" cy="84" r="13" fill="#2f4b8f"/>' +
+    '<circle cx="200" cy="190" r="13" fill="#2f4b8f"/>' +
+    '<circle cx="308" cy="84" r="13" fill="#2f4b8f"/>' +
+    '<text x="92" y="58" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1b2130" text-anchor="middle">A</text>' +
+    '<text x="200" y="222" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1b2130" text-anchor="middle">B</text>' +
+    '<text x="308" y="58" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1b2130" text-anchor="middle">C</text>' +
+    '</svg>';
+  var PENDULUM_IMAGE = "data:image/svg+xml," + encodeURIComponent(PENDULUM_SVG);
+
+  function sampleState(){
+    return {
+      isSample: true,
+      meta: {
+        title: "Unit Test 1 — Motion & Force",
+        klass: "Class 10",
+        subject: "Science",
+        maxMarks: "20",
+        duration: "60 minutes",
+        date: ""
+      },
+      questions: [
+        { id: uid(), type:"mcq", text:"Which of the following is the SI unit of force?", marks:1,
+          options:["Joule","Newton","Watt","Pascal"], correctIndex:1, answer:"" },
+        { id: uid(), type:"mcq", text:"An object at rest stays at rest unless acted upon by an external force. This is a statement of:", marks:1,
+          options:["Newton's First Law","Newton's Second Law","Newton's Third Law","Law of Conservation of Energy"], correctIndex:0, answer:"" },
+        { id: uid(), type:"mcq", text:"Study the diagram of a simple pendulum shown above. At which labelled point is the pendulum's gravitational potential energy at its maximum?", marks:1,
+          options:["Point A only","Point B only","Points A and C","It is the same at all three points"], correctIndex:2, answer:"",
+          image: PENDULUM_IMAGE, imageCaption:"A simple pendulum — points A, B and C mark the bob's position during one swing." },
+        { id: uid(), type:"passage", marks:3,
+          text:"Friction is a force that opposes relative motion between two surfaces in contact. It arises because no surface is perfectly smooth — even surfaces that look polished have microscopic irregularities that interlock with each other. Friction can be reduced by polishing surfaces, using lubricants such as oil, or by using ball bearings, which convert sliding friction into rolling friction, a force that is much smaller.",
+          image: null, imageCaption:"",
+          subQuestions: [
+            { id: uid(), type:"mcq", text:"Which of the following reduces friction by converting sliding friction into rolling friction?", marks:1,
+              options:["Applying lubricant oil","Using ball bearings","Polishing the surface","Increasing surface area"], correctIndex:1, answer:"" },
+            { id: uid(), type:"short", text:"According to the passage, why does friction exist even between surfaces that appear smooth?", marks:2,
+              options:[], correctIndex:0, answer:"Because even polished surfaces have microscopic irregularities that interlock with each other." }
+          ] },
+        { id: uid(), type:"short", text:"Define inertia and give one everyday example.", marks:3,
+          options:[], correctIndex:0, answer:"Inertia is the tendency of an object to resist a change in its state of motion. Example: passengers lurch forward when a moving bus stops suddenly." },
+        { id: uid(), type:"long", text:"State Newton's three laws of motion and explain each with a suitable example.", marks:5,
+          options:[], correctIndex:0, answer:"1) A body remains at rest or in uniform motion unless acted on by a net external force. 2) F = ma — acceleration is proportional to net force and inversely proportional to mass. 3) For every action there is an equal and opposite reaction. Examples: a ball on a table stays still (1st law); pushing a shopping cart harder accelerates it more (2nd law); a rocket expels gas downward and is pushed upward (3rd law)." }
+      ]
+    };
+  }
+
+  function loadState(){
+    try{
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if(raw){
+        var parsed = JSON.parse(raw);
+        if(parsed && Array.isArray(parsed.questions) && parsed.meta) return parsed;
+      }
+    }catch(e){ /* storage unavailable — fall through to sample */ }
+    return sampleState();
+  }
+  function saveState(){
+    try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }catch(e){ /* ignore quota/privacy errors */ }
+  }
+
+  var state = loadState();
+  var currentView = "paper";
+  var formType = "mcq";
+  var editingId = null;
+  var draftOptions = ["","","",""];
+  var draftCorrect = 0;
+  var draftImage = null;
+  var draftSubQuestions = [];
+  var subFormType = "mcq";
+  var subDraftOptions = ["","","",""];
+  var subDraftCorrect = 0;
+  var subEditingId = null;
+  var toastTimer = null;
+
+  // ---- element refs ----
+  var el = {
+    paperTitle: document.getElementById("paperTitle"),
+    classField: document.getElementById("classField"),
+    subjectField: document.getElementById("subjectField"),
+    maxMarks: document.getElementById("maxMarks"),
+    duration: document.getElementById("duration"),
+    examDate: document.getElementById("examDate"),
+    marksFill: document.getElementById("marksFill"),
+    marksStatus: document.getElementById("marksStatus"),
+    typeTabs: document.getElementById("typeTabs"),
+    questionForm: document.getElementById("questionForm"),
+    qText: document.getElementById("qText"),
+    mcqBlock: document.getElementById("mcqBlock"),
+    mcqOptions: document.getElementById("mcqOptions"),
+    addOptionBtn: document.getElementById("addOptionBtn"),
+    formError: document.getElementById("formError"),
+    qImageInput: document.getElementById("qImageInput"),
+    qImageBtn: document.getElementById("qImageBtn"),
+    qImageFileName: document.getElementById("qImageFileName"),
+    imagePreviewWrap: document.getElementById("imagePreviewWrap"),
+    imagePreviewImg: document.getElementById("imagePreviewImg"),
+    removeImageBtn: document.getElementById("removeImageBtn"),
+    imageCaptionWrap: document.getElementById("imageCaptionWrap"),
+    qImageCaption: document.getElementById("qImageCaption"),
+    answerFieldWrap: document.getElementById("answerFieldWrap"),
+    qAnswer: document.getElementById("qAnswer"),
+    qTextLabel: document.getElementById("qTextLabel"),
+    marksFieldWrap: document.getElementById("marksFieldWrap"),
+    passageBlock: document.getElementById("passageBlock"),
+    subqCount: document.getElementById("subqCount"),
+    subqCountPlural: document.getElementById("subqCountPlural"),
+    subqMarksTotal: document.getElementById("subqMarksTotal"),
+    subqList: document.getElementById("subqList"),
+    subTypeTabs: document.getElementById("subTypeTabs"),
+    subqText: document.getElementById("subqText"),
+    subMcqBlock: document.getElementById("subMcqBlock"),
+    subMcqOptions: document.getElementById("subMcqOptions"),
+    subAddOptionBtn: document.getElementById("subAddOptionBtn"),
+    subAnswerFieldWrap: document.getElementById("subAnswerFieldWrap"),
+    subqAnswer: document.getElementById("subqAnswer"),
+    subqMarks: document.getElementById("subqMarks"),
+    addSubqBtn: document.getElementById("addSubqBtn"),
+    cancelSubqEditBtn: document.getElementById("cancelSubqEditBtn"),
+    qMarks: document.getElementById("qMarks"),
+    addQuestionBtn: document.getElementById("addQuestionBtn"),
+    cancelEditBtn: document.getElementById("cancelEditBtn"),
+    formHeading: document.getElementById("formHeading"),
+    qCount: document.getElementById("qCount"),
+    questionList: document.getElementById("questionList"),
+    viewToggle: document.getElementById("viewToggle"),
+    sampleNote: document.getElementById("sampleNote"),
+    dismissSample: document.getElementById("dismissSample"),
+    printArea: document.getElementById("printArea"),
+    printBtn: document.getElementById("printBtn"),
+    downloadDocxBtn: document.getElementById("downloadDocxBtn"),
+    clearAllBtn: document.getElementById("clearAllBtn"),
+    brandTitle: document.getElementById("brandTitle"),
+    mobileTabs: document.getElementById("mobileTabs"),
+    toast: document.getElementById("toast"),
+    modalOverlay: document.getElementById("modalOverlay"),
+    modalTitle: document.getElementById("modalTitle"),
+    modalMessage: document.getElementById("modalMessage"),
+    modalCancelBtn: document.getElementById("modalCancelBtn"),
+    modalConfirmBtn: document.getElementById("modalConfirmBtn")
+  };
+
+  // ---- static icon-bearing labels (kept out of markup above to keep it readable) ----
+  el.clearAllBtn.innerHTML = ICONS.trash + '<span>Clear all</span>';
+  el.qImageBtn.innerHTML = ICONS.image + '<span>Choose image</span>';
+  el.dismissSample.innerHTML = ICONS.close;
+  el.dismissSample.setAttribute("aria-label","Dismiss");
+  var typeTabDefs = [
+    {type:"mcq", label:"MCQ", icon:ICONS.list},
+    {type:"short", label:"Short answer", icon:ICONS.shortLine},
+    {type:"long", label:"Long answer", icon:ICONS.longLines},
+    {type:"passage", label:"Passage", icon:ICONS.book}
+  ];
+  Array.prototype.forEach.call(el.typeTabs.querySelectorAll(".type-tab"), function(btn, i){
+    btn.innerHTML = typeTabDefs[i].icon + '<span>' + typeTabDefs[i].label + '</span>';
+  });
+  var subTypeTabDefs = [
+    {type:"mcq", label:"MCQ", icon:ICONS.list},
+    {type:"short", label:"Short", icon:ICONS.shortLine},
+    {type:"long", label:"Long", icon:ICONS.longLines}
+  ];
+  Array.prototype.forEach.call(el.subTypeTabs.querySelectorAll(".type-tab"), function(btn, i){
+    btn.innerHTML = subTypeTabDefs[i].icon + '<span>' + subTypeTabDefs[i].label + '</span>';
+  });
+  el.addSubqBtn.textContent = "+ Add sub-question";
+  var mobileTabDefs = [
+    {target:"build", label:"Build", icon:ICONS.build},
+    {target:"preview", label:"Preview", icon:ICONS.doc}
+  ];
+  Array.prototype.forEach.call(el.mobileTabs.querySelectorAll(".mobile-tab"), function(btn, i){
+    btn.innerHTML = mobileTabDefs[i].icon + '<span>' + mobileTabDefs[i].label + '</span>';
+  });
+
+  function showToast(msg){
+    el.toast.innerHTML = ICONS.check + '<span>' + escapeHtml(msg) + '</span>';
+    el.toast.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ el.toast.hidden = true; }, 2200);
+  }
+
+  // ---- confirm modal (replaces window.confirm — matches the app's design and works
+  // in embedded/iframed contexts where the native browser confirm() may be blocked) ----
+  function confirmDialog(opts){
+    opts = opts || {};
+    return new Promise(function(resolve){
+      el.modalTitle.textContent = opts.title || "Are you sure?";
+      el.modalMessage.textContent = opts.message || "";
+      el.modalConfirmBtn.textContent = opts.confirmLabel || "Confirm";
+      el.modalConfirmBtn.className = "btn " + (opts.danger ? "btn-danger" : "btn-primary");
+      el.modalOverlay.hidden = false;
+
+      function cleanup(result){
+        el.modalOverlay.hidden = true;
+        el.modalConfirmBtn.removeEventListener("click", onConfirm);
+        el.modalCancelBtn.removeEventListener("click", onCancel);
+        el.modalOverlay.removeEventListener("mousedown", onOverlayClick);
+        document.removeEventListener("keydown", onKeydown);
+        resolve(result);
+      }
+      function onConfirm(){ cleanup(true); }
+      function onCancel(){ cleanup(false); }
+      function onOverlayClick(e){ if(e.target === el.modalOverlay) cleanup(false); }
+      function onKeydown(e){ if(e.key === "Escape") cleanup(false); }
+
+      el.modalConfirmBtn.addEventListener("click", onConfirm);
+      el.modalCancelBtn.addEventListener("click", onCancel);
+      el.modalOverlay.addEventListener("mousedown", onOverlayClick);
+      document.addEventListener("keydown", onKeydown);
+      el.modalConfirmBtn.focus();
+    });
+  }
+
+  // ---- mobile build/preview switcher ----
+  document.body.setAttribute("data-mobile-view","build");
+  el.mobileTabs.addEventListener("click", function(e){
+    var btn = e.target.closest(".mobile-tab");
+    if(!btn) return;
+    var target = btn.getAttribute("data-target");
+    document.body.setAttribute("data-mobile-view", target);
+    Array.prototype.forEach.call(el.mobileTabs.querySelectorAll(".mobile-tab"), function(b){
+      var active = b === btn;
+      b.classList.toggle("active", active);
+      b.setAttribute("aria-selected", active ? "true" : "false");
+    });
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+
+  // ---- meta fields ----
+  function fillMetaInputs(){
+    el.paperTitle.value = state.meta.title || "";
+    el.classField.value = state.meta.klass || "";
+    el.subjectField.value = state.meta.subject || "";
+    el.maxMarks.value = state.meta.maxMarks || "";
+    el.duration.value = state.meta.duration || "";
+    el.examDate.value = state.meta.date || "";
+  }
+  function onMetaChange(){
+    state.meta.title = el.paperTitle.value;
+    state.meta.klass = el.classField.value;
+    state.meta.subject = el.subjectField.value;
+    state.meta.maxMarks = el.maxMarks.value;
+    state.meta.duration = el.duration.value;
+    state.meta.date = el.examDate.value;
+    markEdited();
+    renderAll();
+  }
+  [el.paperTitle, el.classField, el.subjectField, el.maxMarks, el.duration, el.examDate].forEach(function(input){
+    input.addEventListener("input", onMetaChange);
+  });
+
+  function markEdited(){
+    if(state.isSample){
+      state.isSample = false;
+    }
+    saveState();
+  }
+
+  function hideFormError(){ el.formError.hidden = true; }
+  function showFormError(msg){
+    el.formError.innerHTML = ICONS.warning + '<span>' + escapeHtml(msg) + '</span>';
+    el.formError.hidden = false;
+  }
+
+  // ---- type tabs ----
+  function updateFormVisibility(){
+    el.mcqBlock.hidden = formType !== "mcq";
+    el.answerFieldWrap.hidden = !(formType === "short" || formType === "long");
+    el.passageBlock.hidden = formType !== "passage";
+    el.marksFieldWrap.hidden = formType === "passage";
+    el.qTextLabel.textContent = formType === "passage" ? "Passage text" : "Question text";
+    el.qText.placeholder = formType === "passage" ? "Paste or type the reading passage here…" : "Type the question here…";
+    el.qText.rows = formType === "passage" ? 5 : 3;
+  }
+  el.typeTabs.addEventListener("click", function(e){
+    var btn = e.target.closest(".type-tab");
+    if(!btn) return;
+    formType = btn.getAttribute("data-type");
+    Array.prototype.forEach.call(el.typeTabs.querySelectorAll(".type-tab"), function(b){
+      b.classList.toggle("active", b === btn);
+    });
+    updateFormVisibility();
+    hideFormError();
+  });
+
+  // ---- mcq option rows ----
+  function renderOptionRows(){
+    el.mcqOptions.innerHTML = "";
+    draftOptions.forEach(function(val, i){
+      var row = document.createElement("div");
+      row.className = "mcq-option-row" + (draftCorrect === i ? " is-correct" : "");
+      row.innerHTML =
+        '<input type="radio" name="correctOpt" id="optRadio' + i + '"' + (draftCorrect === i ? " checked" : "") + '>' +
+        '<span class="opt-letter">' + String.fromCharCode(65 + i) + '</span>' +
+        '<input type="text" id="optText' + i + '" placeholder="Option ' + String.fromCharCode(65 + i) + '" value="' + escapeHtml(val) + '">' +
+        (draftOptions.length > 2 ? '<button type="button" class="btn btn-ghost btn-small" data-remove="' + i + '" aria-label="Remove option ' + String.fromCharCode(65+i) + '">' + ICONS.close + '</button>' : '');
+      el.mcqOptions.appendChild(row);
+    });
+    Array.prototype.forEach.call(el.mcqOptions.querySelectorAll('input[type="radio"]'), function(r, i){
+      r.addEventListener("change", function(){
+        draftCorrect = i;
+        Array.prototype.forEach.call(el.mcqOptions.querySelectorAll('.mcq-option-row'), function(row, j){
+          row.classList.toggle("is-correct", j === i);
+        });
+      });
+    });
+    Array.prototype.forEach.call(el.mcqOptions.querySelectorAll('input[type="text"]'), function(inp, i){
+      inp.addEventListener("input", function(){
+        draftOptions[i] = inp.value;
+        if(inp.value.trim()){ inp.classList.remove("input-error"); hideFormError(); }
+      });
+    });
+    Array.prototype.forEach.call(el.mcqOptions.querySelectorAll('button[data-remove]'), function(btn){
+      btn.addEventListener("click", function(){
+        var idx = Number(btn.getAttribute("data-remove"));
+        draftOptions.splice(idx, 1);
+        if(draftCorrect >= draftOptions.length) draftCorrect = draftOptions.length - 1;
+        else if(draftCorrect > idx) draftCorrect -= 1;
+        renderOptionRows();
+      });
+    });
+  }
+  el.addOptionBtn.addEventListener("click", function(){
+    if(draftOptions.length >= 6) return;
+    draftOptions.push("");
+    renderOptionRows();
+  });
+  renderOptionRows();
+
+  // ---- passage sub-questions (mini builder nested inside the passage type) ----
+  function renderSubOptionRows(){
+    el.subMcqOptions.innerHTML = "";
+    subDraftOptions.forEach(function(val, i){
+      var row = document.createElement("div");
+      row.className = "mcq-option-row" + (subDraftCorrect === i ? " is-correct" : "");
+      row.innerHTML =
+        '<input type="radio" name="subCorrectOpt" id="subOptRadio' + i + '"' + (subDraftCorrect === i ? " checked" : "") + '>' +
+        '<span class="opt-letter">' + String.fromCharCode(65 + i) + '</span>' +
+        '<input type="text" id="subOptText' + i + '" placeholder="Option ' + String.fromCharCode(65 + i) + '" value="' + escapeHtml(val) + '">' +
+        (subDraftOptions.length > 2 ? '<button type="button" class="btn btn-ghost btn-small" data-subremove="' + i + '" aria-label="Remove option ' + String.fromCharCode(65+i) + '">' + ICONS.close + '</button>' : '');
+      el.subMcqOptions.appendChild(row);
+    });
+    Array.prototype.forEach.call(el.subMcqOptions.querySelectorAll('input[type="radio"]'), function(r, i){
+      r.addEventListener("change", function(){
+        subDraftCorrect = i;
+        Array.prototype.forEach.call(el.subMcqOptions.querySelectorAll('.mcq-option-row'), function(row, j){
+          row.classList.toggle("is-correct", j === i);
+        });
+      });
+    });
+    Array.prototype.forEach.call(el.subMcqOptions.querySelectorAll('input[type="text"]'), function(inp, i){
+      inp.addEventListener("input", function(){
+        subDraftOptions[i] = inp.value;
+        if(inp.value.trim()){ inp.classList.remove("input-error"); hideFormError(); }
+      });
+    });
+    Array.prototype.forEach.call(el.subMcqOptions.querySelectorAll('button[data-subremove]'), function(btn){
+      btn.addEventListener("click", function(){
+        var idx = Number(btn.getAttribute("data-subremove"));
+        subDraftOptions.splice(idx, 1);
+        if(subDraftCorrect >= subDraftOptions.length) subDraftCorrect = subDraftOptions.length - 1;
+        else if(subDraftCorrect > idx) subDraftCorrect -= 1;
+        renderSubOptionRows();
+      });
+    });
+  }
+  el.subAddOptionBtn.addEventListener("click", function(){
+    if(subDraftOptions.length >= 6) return;
+    subDraftOptions.push("");
+    renderSubOptionRows();
+  });
+  renderSubOptionRows();
+  renderSubqList();
+  updateFormVisibility();
+
+  el.subTypeTabs.addEventListener("click", function(e){
+    var btn = e.target.closest(".type-tab");
+    if(!btn) return;
+    subFormType = btn.getAttribute("data-subtype");
+    Array.prototype.forEach.call(el.subTypeTabs.querySelectorAll(".type-tab"), function(b){
+      b.classList.toggle("active", b === btn);
+    });
+    el.subMcqBlock.hidden = subFormType !== "mcq";
+    el.subAnswerFieldWrap.hidden = subFormType === "mcq";
+    hideFormError();
+  });
+
+  function resetSubForm(){
+    subEditingId = null;
+    el.subqText.value = "";
+    el.subqAnswer.value = "";
+    el.subqMarks.value = 1;
+    subDraftOptions = ["","","",""];
+    subDraftCorrect = 0;
+    renderSubOptionRows();
+    el.addSubqBtn.textContent = "+ Add sub-question";
+    el.cancelSubqEditBtn.hidden = true;
+  }
+  el.cancelSubqEditBtn.addEventListener("click", resetSubForm);
+
+  function renderSubqList(){
+    el.subqCount.textContent = draftSubQuestions.length;
+    el.subqCountPlural.textContent = draftSubQuestions.length === 1 ? "" : "s";
+    var total = draftSubQuestions.reduce(function(s, sq){ return s + (Number(sq.marks) || 0); }, 0);
+    el.subqMarksTotal.textContent = total;
+    if(!draftSubQuestions.length){
+      el.subqList.innerHTML = '<div class="empty-note" style="padding:10px 4px;"><span>No sub-questions yet — add at least one below.</span></div>';
+      return;
+    }
+    el.subqList.innerHTML = "";
+    draftSubQuestions.forEach(function(sq, i){
+      var item = document.createElement("div");
+      item.className = "q-item";
+      item.innerHTML =
+        '<div class="q-item-top">' +
+          '<div class="q-badges"><span class="badge">' + TYPE_LABEL[sq.type] + '</span><span class="badge marks">' + sq.marks + ' mk</span></div>' +
+          '<div class="q-actions">' +
+            '<button type="button" data-subact="up" aria-label="Move up"' + (i===0?' disabled':'') + '>' + ICONS.chevronUp + '</button>' +
+            '<button type="button" data-subact="down" aria-label="Move down"' + (i===draftSubQuestions.length-1?' disabled':'') + '>' + ICONS.chevronDown + '</button>' +
+            '<button type="button" data-subact="edit" aria-label="Edit">' + ICONS.edit + '</button>' +
+            '<button type="button" class="danger" data-subact="del" aria-label="Delete">' + ICONS.trash + '</button>' +
+          '</div>' +
+        '</div>' +
+        '<div class="q-text">(' + String.fromCharCode(97+i) + ') ' + escapeHtml(sq.text) + '</div>';
+      item.querySelector('[data-subact="up"]').addEventListener("click", function(){ moveSubQuestion(sq.id, -1); });
+      item.querySelector('[data-subact="down"]').addEventListener("click", function(){ moveSubQuestion(sq.id, 1); });
+      item.querySelector('[data-subact="edit"]').addEventListener("click", function(){ startSubEdit(sq.id); });
+      item.querySelector('[data-subact="del"]').addEventListener("click", function(){
+        draftSubQuestions = draftSubQuestions.filter(function(x){ return x.id !== sq.id; });
+        if(subEditingId === sq.id) resetSubForm();
+        renderSubqList();
+      });
+      el.subqList.appendChild(item);
+    });
+  }
+
+  function moveSubQuestion(id, dir){
+    var idx = draftSubQuestions.findIndex(function(x){ return x.id === id; });
+    var swapWith = idx + dir;
+    if(idx === -1 || swapWith < 0 || swapWith >= draftSubQuestions.length) return;
+    var tmp = draftSubQuestions[idx];
+    draftSubQuestions[idx] = draftSubQuestions[swapWith];
+    draftSubQuestions[swapWith] = tmp;
+    renderSubqList();
+  }
+
+  function startSubEdit(id){
+    var sq = draftSubQuestions.find(function(x){ return x.id === id; });
+    if(!sq) return;
+    subEditingId = id;
+    subFormType = sq.type;
+    Array.prototype.forEach.call(el.subTypeTabs.querySelectorAll(".type-tab"), function(b){
+      b.classList.toggle("active", b.getAttribute("data-subtype") === sq.type);
+    });
+    el.subMcqBlock.hidden = sq.type !== "mcq";
+    el.subAnswerFieldWrap.hidden = sq.type === "mcq";
+    hideFormError();
+    el.subqText.value = sq.text;
+    el.subqMarks.value = sq.marks;
+    el.subqAnswer.value = sq.answer || "";
+    if(sq.type === "mcq"){
+      subDraftOptions = sq.options.slice();
+      subDraftCorrect = sq.correctIndex || 0;
+    } else {
+      subDraftOptions = ["","","",""];
+      subDraftCorrect = 0;
+    }
+    renderSubOptionRows();
+    el.addSubqBtn.textContent = "Save sub-question";
+    el.cancelSubqEditBtn.hidden = false;
+    el.subqText.scrollIntoView({behavior:"smooth", block:"center"});
+    el.subqText.focus();
+  }
+
+  el.addSubqBtn.addEventListener("click", function(){
+    var text = el.subqText.value.trim();
+    if(!text){ el.subqText.focus(); return; }
+    var marks = Math.max(1, Number(el.subqMarks.value) || 1);
+    var sq;
+    if(subFormType === "mcq"){
+      var opts = subDraftOptions.map(function(o){ return o.trim(); });
+      var hasEmpty = opts.some(function(o){ return !o; });
+      if(hasEmpty){
+        Array.prototype.forEach.call(el.subMcqOptions.querySelectorAll('input[type="text"]'), function(inp, i){
+          inp.classList.toggle("input-error", !opts[i]);
+        });
+        showFormError("Fill in all options before adding this sub-question.");
+        return;
+      }
+      sq = { id: subEditingId || uid(), type:"mcq", text:text, marks:marks, options:opts, correctIndex:subDraftCorrect, answer:"" };
+    } else {
+      sq = { id: subEditingId || uid(), type:subFormType, text:text, marks:marks, options:[], correctIndex:0, answer: el.subqAnswer.value.trim() };
+    }
+    if(subEditingId){
+      var idx = draftSubQuestions.findIndex(function(x){ return x.id === subEditingId; });
+      if(idx !== -1) draftSubQuestions[idx] = sq;
+    } else {
+      draftSubQuestions.push(sq);
+    }
+    hideFormError();
+    resetSubForm();
+    renderSubqList();
+  });
+
+  // ---- question image (optional, available for every question type) ----
+  function setImagePreview(dataUrl){
+    draftImage = dataUrl || null;
+    el.qImageFileName.classList.remove("input-error");
+    if(draftImage){
+      el.imagePreviewImg.src = draftImage;
+      el.imagePreviewWrap.hidden = false;
+      el.imageCaptionWrap.hidden = false;
+      el.qImageFileName.textContent = "Image attached";
+    } else {
+      el.imagePreviewImg.src = "";
+      el.imagePreviewWrap.hidden = true;
+      el.imageCaptionWrap.hidden = true;
+      el.qImageFileName.textContent = "No image attached";
+      el.qImageCaption.value = "";
+      el.qImageInput.value = "";
+    }
+  }
+  var IMAGE_MAX_BYTES = 8 * 1024 * 1024;
+  var IMAGE_MAX_SOURCE_DIM = 8000; // guards against pathological/huge source images (e.g. crafted SVGs) blowing up canvas memory
+  var IMAGE_EXT_RE = /\.(jpe?g|png|gif|webp|bmp|svg)$/i;
+
+  function imageFieldError(msg){
+    hideFormError();
+    el.qImageFileName.textContent = "No image attached";
+    el.qImageFileName.classList.add("input-error");
+    showToast(msg);
+  }
+  function clearImageFieldError(){
+    el.qImageFileName.classList.remove("input-error");
+  }
+
+  function processImageFile(file){
+    if(!file) return;
+    clearImageFieldError();
+    var looksLikeImage = /^image\//.test(file.type) || (!file.type && IMAGE_EXT_RE.test(file.name || ""));
+    if(!looksLikeImage){ imageFieldError("Only image files are allowed (JPG, PNG, GIF, WebP, BMP, SVG)."); return; }
+    if(file.size > IMAGE_MAX_BYTES){ imageFieldError("Image too large — please use a file under " + (IMAGE_MAX_BYTES / (1024*1024)) + "MB."); return; }
+    var reader = new FileReader();
+    reader.onload = function(ev){
+      var img = new Image();
+      img.onload = function(){
+        if(img.width <= 0 || img.height <= 0){ imageFieldError("Could not read that image — it may be corrupted."); return; }
+        if(img.width > IMAGE_MAX_SOURCE_DIM || img.height > IMAGE_MAX_SOURCE_DIM){ imageFieldError("That image's dimensions are too large to use here."); return; }
+        var maxDim = 1000;
+        var scale = Math.min(1, maxDim / Math.max(img.width, img.height));
+        var w = Math.max(1, Math.round(img.width * scale));
+        var h = Math.max(1, Math.round(img.height * scale));
+        var canvas = document.createElement("canvas");
+        canvas.width = w; canvas.height = h;
+        var ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0, w, h);
+        var dataUrl;
+        try{ dataUrl = canvas.toDataURL("image/jpeg", 0.82); }
+        catch(err){ imageFieldError("Couldn't process that image — try a different file."); return; }
+        setImagePreview(dataUrl);
+      };
+      img.onerror = function(){ imageFieldError("Could not read that image — it may be corrupted or an unsupported format."); };
+      img.src = ev.target.result;
+    };
+    reader.onerror = function(){ imageFieldError("Could not read that image."); };
+    reader.readAsDataURL(file);
+  }
+  el.qImageBtn.addEventListener("click", function(){ el.qImageInput.click(); });
+  el.qImageInput.addEventListener("change", function(){
+    var file = el.qImageInput.files && el.qImageInput.files[0];
+    if(file) processImageFile(file);
+  });
+  el.removeImageBtn.addEventListener("click", function(){ setImagePreview(null); });
+
+  function resetForm(){
+    editingId = null;
+    el.qText.value = "";
+    el.qAnswer.value = "";
+    el.qMarks.value = 1;
+    draftOptions = ["","","",""];
+    draftCorrect = 0;
+    renderOptionRows();
+    setImagePreview(null);
+    draftSubQuestions = [];
+    resetSubForm();
+    renderSubqList();
+    hideFormError();
+    el.addQuestionBtn.innerHTML = '<span>Add question</span>';
+    el.cancelEditBtn.hidden = true;
+    el.formHeading.innerHTML = '<span class="step-badge">2</span>Add a question';
+  }
+
+  el.cancelEditBtn.addEventListener("click", resetForm);
+
+  el.questionForm.addEventListener("submit", function(e){
+    e.preventDefault();
+    var text = el.qText.value.trim();
+    if(!text){ el.qText.focus(); return; }
+    var marks = Math.max(1, Number(el.qMarks.value) || 1);
+    var q;
+    if(formType === "mcq"){
+      var opts = draftOptions.map(function(o){ return o.trim(); });
+      var hasEmpty = opts.some(function(o){ return !o; });
+      if(hasEmpty){
+        Array.prototype.forEach.call(el.mcqOptions.querySelectorAll('input[type="text"]'), function(inp, i){
+          inp.classList.toggle("input-error", !opts[i]);
+        });
+        showFormError("Fill in all options before adding this question.");
+        return;
+      }
+      q = { id: editingId || uid(), type:"mcq", text:text, marks:marks, options:opts, correctIndex:draftCorrect, answer:"" };
+    } else if(formType === "passage"){
+      if(!draftSubQuestions.length){
+        showFormError("Add at least one sub-question before saving this passage.");
+        return;
+      }
+      var subCopy = draftSubQuestions.map(function(sq){
+        return { id:sq.id, type:sq.type, text:sq.text, marks:sq.marks, options:sq.options.slice(), correctIndex:sq.correctIndex, answer:sq.answer };
+      });
+      var totalMarks = subCopy.reduce(function(s, sq){ return s + (Number(sq.marks) || 0); }, 0);
+      q = { id: editingId || uid(), type:"passage", text:text, marks:totalMarks, subQuestions:subCopy };
+    } else {
+      q = { id: editingId || uid(), type:formType, text:text, marks:marks, options:[], correctIndex:0, answer: el.qAnswer.value.trim() };
+    }
+    q.image = draftImage || null;
+    q.imageCaption = draftImage ? el.qImageCaption.value.trim() : "";
+
+    var wasEditing = !!editingId;
+    if(editingId){
+      var idx = state.questions.findIndex(function(x){ return x.id === editingId; });
+      if(idx !== -1) state.questions[idx] = q;
+    } else {
+      state.questions.push(q);
+    }
+    markEdited();
+    resetForm();
+    renderAll();
+    showToast(wasEditing ? "Changes saved" : "Question added");
+  });
+
+  function startEdit(id){
+    var q = state.questions.find(function(x){ return x.id === id; });
+    if(!q) return;
+    editingId = id;
+    formType = q.type;
+    Array.prototype.forEach.call(el.typeTabs.querySelectorAll(".type-tab"), function(b){
+      b.classList.toggle("active", b.getAttribute("data-type") === q.type);
+    });
+    updateFormVisibility();
+    hideFormError();
+    el.qText.value = q.text;
+    el.qMarks.value = q.marks;
+    el.qAnswer.value = q.answer || "";
+    if(q.type === "mcq"){
+      draftOptions = q.options.slice();
+      draftCorrect = q.correctIndex || 0;
+    } else {
+      draftOptions = ["","","",""];
+      draftCorrect = 0;
+    }
+    renderOptionRows();
+    if(q.type === "passage"){
+      draftSubQuestions = (q.subQuestions || []).map(function(sq){
+        return { id:sq.id, type:sq.type, text:sq.text, marks:sq.marks, options:(sq.options||[]).slice(), correctIndex:sq.correctIndex, answer:sq.answer };
+      });
+    } else {
+      draftSubQuestions = [];
+    }
+    resetSubForm();
+    renderSubqList();
+    setImagePreview(q.image || null);
+    el.qImageCaption.value = q.imageCaption || "";
+    el.addQuestionBtn.innerHTML = '<span>Save changes</span>';
+    el.cancelEditBtn.hidden = false;
+    el.formHeading.innerHTML = '<span class="step-badge">2</span>Edit question';
+    el.qText.scrollIntoView({behavior:"smooth", block:"center"});
+    el.qText.focus();
+  }
+
+  function duplicateQuestion(id){
+    var idx = state.questions.findIndex(function(x){ return x.id === id; });
+    if(idx === -1) return;
+    var copy = JSON.parse(JSON.stringify(state.questions[idx]));
+    copy.id = uid();
+    if(copy.type === "passage" && Array.isArray(copy.subQuestions)){
+      copy.subQuestions.forEach(function(sq){ sq.id = uid(); });
+    }
+    state.questions.splice(idx + 1, 0, copy);
+    markEdited();
+    renderAll();
+    showToast("Question duplicated");
+  }
+
+  function moveQuestion(id, dir){
+    var idx = state.questions.findIndex(function(x){ return x.id === id; });
+    var swapWith = idx + dir;
+    if(idx === -1 || swapWith < 0 || swapWith >= state.questions.length) return;
+    var tmp = state.questions[idx];
+    state.questions[idx] = state.questions[swapWith];
+    state.questions[swapWith] = tmp;
+    markEdited();
+    renderAll();
+  }
+
+  function deleteQuestion(id){
+    state.questions = state.questions.filter(function(x){ return x.id !== id; });
+    if(editingId === id) resetForm();
+    markEdited();
+    renderAll();
+    showToast("Question deleted");
+  }
+
+  function renderQuestionList(){
+    el.qCount.textContent = state.questions.length;
+    if(!state.questions.length){
+      el.questionList.innerHTML = '<div class="empty-note">' + icon('<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><line x1="9" y1="14" x2="15" y2="14"/><line x1="9" y1="18" x2="13" y2="18"/>', 26) +
+        '<span>No questions yet — add your first one above.</span></div>';
+      return;
+    }
+    el.questionList.innerHTML = "";
+    state.questions.forEach(function(q, i){
+      var item = document.createElement("div");
+      item.className = "q-item";
+      item.innerHTML =
+        '<div class="q-item-top">' +
+          '<div class="q-badges"><span class="badge">' + TYPE_LABEL[q.type] + '</span><span class="badge marks">' + q.marks + ' mk</span>' +
+            (q.image ? '<span class="badge img-badge">' + ICONS.image + '<span>Image</span></span>' : '') + '</div>' +
+          '<div class="q-actions">' +
+            '<button type="button" data-act="up" aria-label="Move up"' + (i===0?' disabled':'') + '>' + ICONS.chevronUp + '</button>' +
+            '<button type="button" data-act="down" aria-label="Move down"' + (i===state.questions.length-1?' disabled':'') + '>' + ICONS.chevronDown + '</button>' +
+            '<button type="button" data-act="dup" aria-label="Duplicate">' + ICONS.copy + '</button>' +
+            '<button type="button" data-act="edit" aria-label="Edit">' + ICONS.edit + '</button>' +
+            '<button type="button" class="danger" data-act="del" aria-label="Delete">' + ICONS.trash + '</button>' +
+          '</div>' +
+        '</div>' +
+        '<div class="q-text">' + (i+1) + '. ' + (q.type === "passage"
+          ? 'Passage — ' + ((q.subQuestions && q.subQuestions.length) || 0) + ' sub-question' + ((q.subQuestions && q.subQuestions.length === 1) ? '' : 's') + ': ' + escapeHtml(q.text)
+          : escapeHtml(q.text)) + '</div>';
+      item.querySelector('[data-act="up"]').addEventListener("click", function(){ moveQuestion(q.id, -1); });
+      item.querySelector('[data-act="down"]').addEventListener("click", function(){ moveQuestion(q.id, 1); });
+      item.querySelector('[data-act="dup"]').addEventListener("click", function(){ duplicateQuestion(q.id); });
+      item.querySelector('[data-act="edit"]').addEventListener("click", function(){ startEdit(q.id); });
+      item.querySelector('[data-act="del"]').addEventListener("click", function(){
+        confirmDialog({ title: "Delete this question?", message: "This can't be undone.", confirmLabel: "Delete", danger: true })
+          .then(function(ok){ if(ok) deleteQuestion(q.id); });
+      });
+      el.questionList.appendChild(item);
+    });
+  }
+
+  function renderMarksMeter(){
+    var total = state.questions.reduce(function(sum, q){ return sum + (Number(q.marks) || 0); }, 0);
+    var max = Number(state.meta.maxMarks) || 0;
+    var pct = max > 0 ? Math.min(100, (total / max) * 100) : (total > 0 ? 100 : 0);
+    el.marksFill.style.width = pct + "%";
+    el.marksFill.classList.remove("state-good","state-warn");
+    el.marksStatus.classList.remove("state-good","state-warn");
+
+    var statusHtml;
+    if(max <= 0){
+      statusHtml = '<b class="num">' + total + '</b> mark' + (total===1?'':'s') + ' added — set a target to track allocation';
+    } else if(total === max){
+      el.marksFill.classList.add("state-good");
+      el.marksStatus.classList.add("state-good");
+      statusHtml = ICONS.check + '<span><b class="num">' + total + '</b> / <b class="num">' + max + '</b> — fully allocated</span>';
+    } else if(total > max){
+      el.marksFill.classList.add("state-warn");
+      el.marksStatus.classList.add("state-warn");
+      statusHtml = ICONS.warning + '<span><b class="num">' + (total - max) + '</b> mark' + ((total-max)===1?'':'s') + ' over target (' + total + ' / ' + max + ')</span>';
+    } else {
+      statusHtml = '<span><b class="num">' + total + '</b> / <b class="num">' + max + '</b> — <b class="num">' + (max - total) + '</b> remaining</span>';
+    }
+    el.marksStatus.innerHTML = statusHtml;
+  }
+
+  function sectionsPresent(){
+    return TYPE_ORDER.filter(function(t){ return state.questions.some(function(q){ return q.type === t; }); });
+  }
+
+  function updatePrintButtonLabel(){
+    var label = currentView === "key" ? "Answer Key" : "Question Paper";
+    el.printBtn.innerHTML = ICONS.printer + '<span>Download PDF — ' + label + '</span>';
+    el.printBtn.title = "Generates a paginated PDF directly — consistent margins and page numbers on every page.";
+    el.downloadDocxBtn.innerHTML = ICONS.download + '<span>Download ' + label + ' .docx</span>';
+  }
+
+  // ---- Real .docx export (via the docx.js library) ----
+  // Produces an actual OOXML file, so formatting is exactly what we specify — no
+  // dependence on how a paste target (Word/Docs) chooses to reinterpret pasted HTML.
+  var DOCX_INK = "1B2130", DOCX_MUTED = "5C6474", DOCX_MARK = "A83A31", DOCX_GOOD = "2F7D5A",
+      DOCX_BORDER = "D7DAE3", DOCX_ANSWER_BG = "F7E3E0", DOCX_ANSWER_TEXT = "5C2420",
+      DOCX_PASSAGE_BG = "F7F6F1", DOCX_ACCENT = "2F4B8F";
+  var DOCX_FONT_SERIF = "Georgia", DOCX_FONT_SANS = "Calibri", DOCX_FONT_MONO = "Consolas";
+  var DOCX_PAGE_WIDTH = 12240; // twips — US Letter (docx.js default page size)
+  var DOCX_PAGE_MARGIN = 800; // twips, ~0.55in — mirrors the print stylesheet's page margins
+  var DOCX_CONTENT_WIDTH = DOCX_PAGE_WIDTH - DOCX_PAGE_MARGIN * 2; // usable width, in twips (DXA)
+  var DOCX_RIGHT_TAB = DOCX_CONTENT_WIDTH; // right-aligned tab stop for the marks column
+  // Table/cell widths below are given as DXA (twips), not WidthType.PERCENTAGE: docx.js
+  // serializes percentage widths as a literal "100%" string in w:tblW/@w:w, which real
+  // MS Word's strict parser rejects ("file cannot be opened... unspecified error") even
+  // though more lenient readers (Google Docs, LibreOffice, mammoth) accept it fine.
+
+  function docxRunsFromText(text, opts){
+    opts = opts || {};
+    var D = window.docx;
+    var lines = String(text == null ? "" : text).split("\n");
+    var runs = [];
+    lines.forEach(function(line, i){
+      if(i > 0) runs.push(new D.TextRun({ text: "", break: 1 }));
+      runs.push(new D.TextRun(Object.assign({ text: line }, opts)));
+    });
+    return runs;
+  }
+  function docxNoBorders(){
+    var D = window.docx;
+    var none = { style: D.BorderStyle.NONE, size: 0, color: "FFFFFF" };
+    return { top: none, bottom: none, left: none, right: none, insideHorizontal: none, insideVertical: none };
+  }
+  function docxMetaParagraph(m){
+    var D = window.docx;
+    var parts = [];
+    if(m.klass) parts.push(["Class: ", m.klass]);
+    if(m.subject) parts.push(["Subject: ", m.subject]);
+    if(m.duration) parts.push(["Time: ", m.duration]);
+    if(m.maxMarks) parts.push(["Max Marks: ", String(m.maxMarks)]);
+    if(m.date) parts.push(["Date: ", formatDateDMY(m.date)]);
+    var children = [];
+    parts.forEach(function(p, i){
+      if(i > 0) children.push(new D.TextRun({ text: "   |   ", color: DOCX_MUTED, font: DOCX_FONT_SANS, size: 18 }));
+      children.push(new D.TextRun({ text: p[0], color: DOCX_MUTED, font: DOCX_FONT_SANS, size: 18 }));
+      children.push(new D.TextRun({ text: p[1], color: DOCX_INK, font: DOCX_FONT_MONO, size: 18, bold: true }));
+    });
+    return new D.Paragraph({ alignment: D.AlignmentType.CENTER, spacing: { before: 160, after: 240 }, children: children });
+  }
+  function docxHeaderBlock(m){
+    var D = window.docx;
+    return [
+      new D.Paragraph({
+        alignment: D.AlignmentType.CENTER,
+        border: { bottom: { style: D.BorderStyle.SINGLE, size: 16, color: DOCX_INK, space: 10 } },
+        children: [ new D.TextRun({ text: (m.title && m.title.trim()) || "Untitled Paper", font: DOCX_FONT_SERIF, size: 32, bold: true, color: DOCX_INK }) ]
+      }),
+      docxMetaParagraph(m)
+    ];
+  }
+  function docxInstructionsParagraph(questionCount, sectionCount){
+    var D = window.docx;
+    return new D.Paragraph({
+      alignment: D.AlignmentType.CENTER, spacing: { after: 320 },
+      children: [ new D.TextRun({
+        text: "This paper contains " + questionCount + " question" + (questionCount===1?"":"s") +
+          " across " + sectionCount + " section" + (sectionCount===1?"":"s") + ". All questions are compulsory unless stated otherwise.",
+        italics: true, color: DOCX_MUTED, font: DOCX_FONT_SANS, size: 18
+      }) ]
+    });
+  }
+  function docxRightTabParagraph(leftRuns, rightText, opts){
+    var D = window.docx;
+    opts = opts || {};
+    return new D.Paragraph(Object.assign({
+      tabStops: [{ type: D.TabStopType.RIGHT, position: DOCX_RIGHT_TAB }],
+      children: leftRuns.concat([
+        new D.TextRun({ text: "\t" }),
+        new D.TextRun({ text: rightText, font: DOCX_FONT_MONO, size: 16, bold: true, color: DOCX_MARK })
+      ])
+    }, opts));
+  }
+  function docxSectionTitleParagraph(label, marksText){
+    var D = window.docx;
+    return new D.Paragraph({
+      border: { bottom: { style: D.BorderStyle.SINGLE, size: 6, color: DOCX_BORDER, space: 4 } },
+      spacing: { before: 240, after: 200 },
+      tabStops: [{ type: D.TabStopType.RIGHT, position: DOCX_RIGHT_TAB }],
+      children: [
+        new D.TextRun({ text: label.toUpperCase(), bold: true, font: DOCX_FONT_SANS, size: 19, color: DOCX_INK }),
+        new D.TextRun({ text: "\t" }),
+        new D.TextRun({ text: marksText, font: DOCX_FONT_MONO, size: 15, color: "8A8F9C" })
+      ]
+    });
+  }
+  function docxOptionCell(opt, i, correctIndex, showKey){
+    var D = window.docx;
+    var isCorrect = showKey && i === correctIndex;
+    var letter = String.fromCharCode(97 + i) + ") ";
+    return new D.TableCell({
+      width: { size: Math.round(DOCX_CONTENT_WIDTH / 2), type: D.WidthType.DXA },
+      borders: docxNoBorders(),
+      margins: { top: 40, bottom: 40, left: 0, right: 200 },
+      children: [ new D.Paragraph({
+        indent: { left: 360, hanging: 360 },
+        children: [ new D.TextRun({ text: letter + opt + (isCorrect ? " ✓" : ""), font: DOCX_FONT_SANS, size: 22, color: isCorrect ? DOCX_GOOD : DOCX_INK, bold: isCorrect }) ]
+      }) ]
+    });
+  }
+  function docxOptionsTable(options, correctIndex, showKey){
+    var D = window.docx;
+    var rows = [];
+    for(var i = 0; i < options.length; i += 2){
+      rows.push(new D.TableRow({
+        children: [
+          docxOptionCell(options[i], i, correctIndex, showKey),
+          (options[i+1] !== undefined) ? docxOptionCell(options[i+1], i+1, correctIndex, showKey) : new D.TableCell({ width: { size: Math.round(DOCX_CONTENT_WIDTH / 2), type: D.WidthType.DXA }, children: [new D.Paragraph("")], borders: docxNoBorders() })
+        ]
+      }));
+    }
+    return new D.Table({ width: { size: DOCX_CONTENT_WIDTH, type: D.WidthType.DXA }, borders: docxNoBorders(), rows: rows });
+  }
+  function docxAnswerBoxTable(answer){
+    var D = window.docx;
+    return new D.Table({
+      width: { size: DOCX_CONTENT_WIDTH, type: D.WidthType.DXA }, borders: docxNoBorders(),
+      rows: [ new D.TableRow({ children: [ new D.TableCell({
+        width: { size: DOCX_CONTENT_WIDTH, type: D.WidthType.DXA },
+        shading: { type: D.ShadingType.CLEAR, color: "auto", fill: DOCX_ANSWER_BG },
+        borders: Object.assign(docxNoBorders(), { left: { style: D.BorderStyle.SINGLE, size: 24, color: DOCX_MARK } }),
+        margins: { top: 100, bottom: 100, left: 160, right: 160 },
+        children: [
+          new D.Paragraph({ children: [ new D.TextRun({ text: "MODEL ANSWER", bold: true, font: DOCX_FONT_SANS, size: 14, color: DOCX_ANSWER_TEXT }) ] }),
+          new D.Paragraph({ children: docxRunsFromText(answer ? answer : "No model answer added.", { italics: !answer, font: DOCX_FONT_SANS, size: 19, color: DOCX_ANSWER_TEXT }) })
+        ]
+      }) ] }) ]
+    });
+  }
+  function docxPassageBoxTable(text){
+    var D = window.docx;
+    return new D.Table({
+      width: { size: DOCX_CONTENT_WIDTH, type: D.WidthType.DXA }, borders: docxNoBorders(),
+      rows: [ new D.TableRow({ children: [ new D.TableCell({
+        width: { size: DOCX_CONTENT_WIDTH, type: D.WidthType.DXA },
+        shading: { type: D.ShadingType.CLEAR, color: "auto", fill: DOCX_PASSAGE_BG },
+        borders: Object.assign(docxNoBorders(), { left: { style: D.BorderStyle.SINGLE, size: 24, color: DOCX_ACCENT } }),
+        margins: { top: 160, bottom: 160, left: 220, right: 220 },
+        children: [ new D.Paragraph({ children: docxRunsFromText(text, { font: DOCX_FONT_SERIF, size: 22 }) }) ]
+      }) ] }) ]
+    });
+  }
+  var docxImageCounter = 0;
+  function docxImageParagraphs(image, caption){
+    var D = window.docx;
+    if(!image) return [];
+    var maxW = 380;
+    var scale = Math.min(1, maxW / image.width);
+    var w = Math.max(1, Math.round(image.width * scale));
+    var h = Math.max(1, Math.round(image.height * scale));
+    docxImageCounter += 1;
+    // "name" must be a short label (real Word always uses "Picture N") — a long sentence
+    // there is what made Word's strict parser reject the file; the caption goes in
+    // description/title instead. Omitting altText entirely is worse: docx.js then emits
+    // an empty <wp:docPr name=""/>, which Word also rejects.
+    var shortName = "Picture " + docxImageCounter;
+    var longText = (caption && caption.trim()) || "Question image";
+    var paras = [ new D.Paragraph({
+      spacing: { before: 120, after: caption ? 40 : 160 },
+      children: [ new D.ImageRun({
+        data: image.buffer, transformation: { width: w, height: h }, type: image.type,
+        altText: { name: shortName, title: longText, description: longText }
+      }) ]
+    }) ];
+    if(caption){
+      paras.push(new D.Paragraph({
+        spacing: { after: 160 },
+        children: [ new D.TextRun({ text: caption, italics: true, font: DOCX_FONT_SANS, size: 16, color: DOCX_MUTED }) ]
+      }));
+    }
+    return paras;
+  }
+  function docxQuestionBlock(q, num, showKey){
+    var D = window.docx;
+    var out = [];
+    out.push(docxRightTabParagraph(
+      [ new D.TextRun({ text: num + ".  ", bold: true, font: DOCX_FONT_MONO, size: 21 }) ].concat(docxRunsFromText(q.text, { font: DOCX_FONT_SANS, size: 21 })),
+      "[" + q.marks + "]", { spacing: { after: 60 } }
+    ));
+    out = out.concat(docxImageParagraphs(q._docxImage, q.imageCaption));
+    if(q.type === "mcq"){
+      out.push(docxOptionsTable(q.options, q.correctIndex, showKey));
+    } else if(showKey){
+      out.push(docxAnswerBoxTable(q.answer));
+    }
+    out.push(new D.Paragraph({ spacing: { after: 200 }, children: [] }));
+    return out;
+  }
+  function docxPassageBlock(q, num, showKey){
+    var D = window.docx;
+    var out = [];
+    var subQuestions = q.subQuestions || [];
+    var totalMarks = subQuestions.reduce(function(s, sq){ return s + (Number(sq.marks) || 0); }, 0);
+    out.push(docxRightTabParagraph(
+      [ new D.TextRun({ text: num + ".  ", bold: true, font: DOCX_FONT_MONO, size: 21 }),
+        new D.TextRun({ text: "Read the passage below and answer the questions that follow.", italics: true, color: DOCX_MUTED, font: DOCX_FONT_SANS, size: 21 }) ],
+      "[" + totalMarks + "]", { spacing: { after: 60 } }
+    ));
+    out = out.concat(docxImageParagraphs(q._docxImage, q.imageCaption));
+    out.push(docxPassageBoxTable(q.text));
+    if(subQuestions.length){
+      out.push(new D.Paragraph({
+        spacing: { after: 100 },
+        children: [ new D.TextRun({ text: "Answer the following questions based on the passage above:", italics: true, color: DOCX_MUTED, font: DOCX_FONT_SANS, size: 18 }) ]
+      }));
+    }
+    subQuestions.forEach(function(sq, i){
+      var letter = String.fromCharCode(97 + i);
+      out.push(docxRightTabParagraph(
+        [ new D.TextRun({ text: "(" + letter + ")  ", bold: true, font: DOCX_FONT_MONO, size: 21 }) ].concat(docxRunsFromText(sq.text, { font: DOCX_FONT_SANS, size: 21 })),
+        "[" + sq.marks + "]", { indent: { left: 360 }, spacing: { after: 60 } }
+      ));
+      if(sq.type === "mcq"){
+        out.push(docxOptionsTable(sq.options, sq.correctIndex, showKey));
+      } else if(showKey){
+        out.push(docxAnswerBoxTable(sq.answer));
+      }
+      out.push(new D.Paragraph({ spacing: { after: 160 }, children: [] }));
+    });
+    return out;
+  }
+  function docxFooterParagraph(total){
+    var D = window.docx;
+    return new D.Paragraph({
+      border: { top: { style: D.BorderStyle.SINGLE, size: 6, color: DOCX_BORDER, space: 8 } },
+      spacing: { before: 200 },
+      tabStops: [{ type: D.TabStopType.RIGHT, position: DOCX_RIGHT_TAB }],
+      children: [
+        new D.TextRun({ text: "— End of paper —", italics: true, color: DOCX_MUTED, font: DOCX_FONT_SANS, size: 18 }),
+        new D.TextRun({ text: "\t" }),
+        new D.TextRun({ text: "Total: " + total + " marks", color: DOCX_MUTED, font: DOCX_FONT_SANS, size: 18, bold: true })
+      ]
+    });
+  }
+
+  // Decodes a data: URL to raw bytes, rasterizing to PNG first if it isn't already a
+  // format docx.js embeds directly (e.g. the sample content's inline SVG diagram).
+  function docxResolveImage(dataUrl){
+    return new Promise(function(resolve){
+      if(!dataUrl){ resolve(null); return; }
+      var mimeMatch = /^data:([^;]+);base64,([\s\S]*)$/.exec(dataUrl);
+      var img = new Image();
+      img.onload = function(){
+        var w = img.naturalWidth || 1, h = img.naturalHeight || 1;
+        if(mimeMatch && (mimeMatch[1] === "image/png" || mimeMatch[1] === "image/jpeg")){
+          resolve({ buffer: base64ToUint8Array(mimeMatch[2]), width: w, height: h, type: mimeMatch[1] === "image/png" ? "png" : "jpg" });
+          return;
+        }
+        var canvas = document.createElement("canvas");
+        canvas.width = w; canvas.height = h;
+        var ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0, w, h);
+        var pngDataUrl;
+        try{ pngDataUrl = canvas.toDataURL("image/png"); }catch(e){ resolve(null); return; }
+        var b64 = pngDataUrl.split(",")[1];
+        resolve({ buffer: base64ToUint8Array(b64), width: w, height: h, type: "png" });
+      };
+      img.onerror = function(){ resolve(null); };
+      img.src = dataUrl;
+    });
+  }
+  function base64ToUint8Array(base64){
+    var binary = atob(base64);
+    var bytes = new Uint8Array(binary.length);
+    for(var i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+    return bytes;
+  }
+
+  function buildDocxDocument(view){
+    var D = window.docx;
+    var showKey = view === "key";
+    var m = state.meta;
+    var questions = state.questions;
+    docxImageCounter = 0;
+
+    return Promise.all(questions.map(function(q){
+      return docxResolveImage(q.image).then(function(img){ q._docxImage = img; });
+    })).then(function(){
+      var children = docxHeaderBlock(m);
+
+      if(!questions.length){
+        children.push(new D.Paragraph({ alignment: D.AlignmentType.CENTER, children: [ new D.TextRun({ text: "Add questions to see them here.", color: DOCX_MUTED, font: DOCX_FONT_SANS }) ] }));
+      } else {
+        var sections = sectionsPresent();
+        children.push(docxInstructionsParagraph(questions.length, sections.length));
+        var letters = "ABCDEFGH";
+        sections.forEach(function(type, si){
+          var qs = questions.filter(function(q){ return q.type === type; });
+          var sectionMarks = qs.reduce(function(a, q){ return a + (Number(q.marks) || 0); }, 0);
+          children.push(docxSectionTitleParagraph("Section " + letters[si] + " — " + SECTION_META[type].label, sectionMarks + " marks"));
+          qs.forEach(function(q, qi){
+            children = children.concat(q.type === "passage" ? docxPassageBlock(q, qi+1, showKey) : docxQuestionBlock(q, qi+1, showKey));
+          });
+        });
+        var total = questions.reduce(function(a, q){ return a + (Number(q.marks) || 0); }, 0);
+        children.push(docxFooterParagraph(total));
+      }
+
+      return new D.Document({
+        sections: [{
+          properties: { page: { margin: { top: DOCX_PAGE_MARGIN, bottom: DOCX_PAGE_MARGIN, left: DOCX_PAGE_MARGIN, right: DOCX_PAGE_MARGIN } } },
+          children: children
+        }]
+      });
+    });
+  }
+
+  function slugify(s){
+    return String(s || "question-paper").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "question-paper";
+  }
+
+  // docx.js's default image markup (extra optional attributes like `cstate`, `bwMode`,
+  // `srcRect`, `picLocks`/`graphicFrameLocks`, and a `title` attribute on `wp:docPr`) is
+  // schema-valid but breaks in some real-world MS Word installs ("file cannot be opened...
+  // unspecified error", pointing straight at the <w:drawing> block for the embedded image).
+  // Verified via a Word COM-automation test: Word's OWN native "Insert Picture" output is a
+  // much plainer structure, and re-shaping our generated markup to match that exact shape
+  // (keeping the real relationship id + size) is what actually opens cleanly. Do that here
+  // as a post-processing pass over the .docx zip, so we don't depend on docx.js changing how
+  // it renders images.
+  function normalizeDocxImageMarkup(xml){
+    var pictureIndex = 0;
+    return xml.replace(/<w:drawing>[\s\S]*?<\/w:drawing>/g, function(block){
+      var rIdMatch = /r:embed="([^"]+)"/.exec(block);
+      var extentMatch = /<wp:extent cx="(\d+)" cy="(\d+)"/.exec(block);
+      if(!rIdMatch || !extentMatch) return block;
+      pictureIndex += 1;
+      var rId = rIdMatch[1], cx = extentMatch[1], cy = extentMatch[2];
+      return '<w:drawing><wp:inline distT="0" distB="0" distL="0" distR="0">' +
+        '<wp:extent cx="' + cx + '" cy="' + cy + '"/>' +
+        '<wp:effectExtent l="0" t="0" r="0" b="0"/>' +
+        '<wp:docPr id="' + pictureIndex + '" name="Picture ' + pictureIndex + '"/>' +
+        '<wp:cNvGraphicFramePr/>' +
+        '<a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">' +
+        '<a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">' +
+        '<pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">' +
+        '<pic:nvPicPr><pic:cNvPr id="0" name=""/><pic:cNvPicPr/></pic:nvPicPr>' +
+        '<pic:blipFill><a:blip r:embed="' + rId + '"/><a:stretch><a:fillRect/></a:stretch></pic:blipFill>' +
+        '<pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="' + cx + '" cy="' + cy + '"/></a:xfrm>' +
+        '<a:prstGeom prst="rect"><a:avLst/></a:prstGeom></pic:spPr>' +
+        '</pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing>';
+    });
+  }
+  function repackageDocxForCompatibility(blob){
+    if(!window.JSZip) return Promise.resolve(blob);
+    return blob.arrayBuffer().then(function(buf){
+      return window.JSZip.loadAsync(buf);
+    }).then(function(zip){
+      var docXmlFile = zip.file("word/document.xml");
+      if(!docXmlFile) return blob;
+      return docXmlFile.async("string").then(function(xml){
+        zip.file("word/document.xml", normalizeDocxImageMarkup(xml));
+        return zip.generateAsync({
+          type: "blob",
+          mimeType: "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        });
+      });
+    });
+  }
+
+  function downloadDocx(){
+    if(!window.docx || !window.docx.Packer){
+      showToast("Couldn't load the .docx export library — check your connection and retry");
+      return;
+    }
+    var view = currentView;
+    var label = view === "key" ? "answer-key" : "question-paper";
+    el.downloadDocxBtn.disabled = true;
+    buildDocxDocument(view).then(function(doc){
+      return window.docx.Packer.toBlob(doc);
+    }).then(repackageDocxForCompatibility).then(function(blob){
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement("a");
+      a.href = url;
+      a.download = slugify(state.meta.title) + "-" + label + ".docx";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 4000);
+      showToast("Downloaded — " + (view === "key" ? "Answer Key" : "Question Paper") + " .docx");
+    }).catch(function(err){
+      console.error("docx export failed:", err);
+      showToast("Couldn't generate the .docx — try Copy for Word/Docs instead");
+    }).finally(function(){
+      el.downloadDocxBtn.disabled = false;
+    });
+  }
+  el.downloadDocxBtn.addEventListener("click", downloadDocx);
+
+  // ---- PDF export (via html2canvas + jsPDF) ----
+  // window.print() depends on @page CSS margins actually being honored by whatever
+  // print pipeline the user's browser/OS hands off to, which real-world testing showed
+  // is inconsistent (page 1 can look fine while later pages look "attached" to the
+  // paper edge). This renders the paper to an image and paginates it ourselves, so
+  // margins and page numbers are guaranteed identical on every page regardless of the
+  // user's environment. Page breaks are computed from the actual DOM layout (never
+  // splitting a question, option grid, or sub-question across a page) rather than
+  // cutting the image at a blind fixed height.
+  var PDF_A4_WIDTH_MM = 210, PDF_A4_HEIGHT_MM = 297, PDF_MARGIN_MM = 15;
+  var PDF_CONTENT_WIDTH_PX = 680; // render width used for capture; chosen to match the A4 content width below
+
+  function collectPdfBreakBoundaries(root){
+    var rootTop = root.getBoundingClientRect().top;
+    function topOf(node){ return node.getBoundingClientRect().top - rootTop; }
+    var boundaries = [0];
+    Array.prototype.forEach.call(root.children, function(node){
+      if(node.classList.contains("ps-header") || node.classList.contains("ps-instructions") || node.classList.contains("ps-footer")){
+        boundaries.push(topOf(node));
+      } else if(node.classList.contains("ps-section")){
+        Array.prototype.forEach.call(node.children, function(child){
+          if(child.classList.contains("ps-section-title") || child.classList.contains("ps-q")){
+            boundaries.push(topOf(child));
+            var subqList = child.querySelector(".ps-subq-list");
+            if(subqList){
+              Array.prototype.forEach.call(subqList.children, function(subq){ boundaries.push(topOf(subq)); });
+            }
+          }
+        });
+      }
+    });
+    boundaries.push(root.scrollHeight);
+    var seen = {};
+    return boundaries.filter(function(b){
+      var key = Math.round(b);
+      if(seen[key]) return false;
+      seen[key] = true;
+      return true;
+    }).sort(function(a, b){ return a - b; });
+  }
+
+  // Greedily packs boundaries into pages: a break only ever falls on one of these
+  // pre-computed "safe" positions, so content is never sliced through mid-element. If a
+  // single unit is itself taller than one page (a very large image), it's placed alone
+  // rather than being cut.
+  function computePdfPageRanges(boundaries, pageContentHeightPx){
+    var ranges = [];
+    var pageStart = boundaries[0];
+    var lastFit = boundaries[0];
+    for(var i = 1; i < boundaries.length; i++){
+      var b = boundaries[i];
+      if(b - pageStart > pageContentHeightPx){
+        if(lastFit === pageStart) lastFit = b;
+        ranges.push([pageStart, lastFit]);
+        pageStart = lastFit;
+      }
+      lastFit = b;
+    }
+    if(ranges.length === 0 || ranges[ranges.length - 1][1] !== lastFit) ranges.push([pageStart, lastFit]);
+    return ranges;
+  }
+
+  function downloadPdf(){
+    if(!window.html2canvas || !window.jspdf){
+      showToast("Couldn't load the PDF export library — check your connection and retry");
+      return;
+    }
+    var view = currentView;
+    var label = view === "key" ? "answer-key" : "question-paper";
+    var root = el.printArea;
+    var originalWidth = root.style.width;
+    el.printBtn.disabled = true;
+
+    root.classList.add("pdf-capture");
+    root.style.width = PDF_CONTENT_WIDTH_PX + "px";
+    void root.offsetHeight; // force reflow at the forced width before measuring/capturing
+
+    var boundaries = collectPdfBreakBoundaries(root);
+
+    window.html2canvas(root, { scale: 2, backgroundColor: "#ffffff", useCORS: true }).then(function(canvas){
+      root.style.width = originalWidth;
+      root.classList.remove("pdf-capture");
+
+      var scale = canvas.width / PDF_CONTENT_WIDTH_PX;
+      var contentWidthMM = PDF_A4_WIDTH_MM - PDF_MARGIN_MM * 2;
+      var contentHeightMM = PDF_A4_HEIGHT_MM - PDF_MARGIN_MM * 2;
+      var mmPerCssPx = contentWidthMM / PDF_CONTENT_WIDTH_PX;
+      var pageContentHeightPx = contentHeightMM / mmPerCssPx;
+
+      var ranges = computePdfPageRanges(boundaries, pageContentHeightPx);
+      var JsPDF = window.jspdf.jsPDF;
+      var doc = new JsPDF({ unit: "mm", format: "a4" });
+
+      ranges.forEach(function(range, i){
+        if(i > 0) doc.addPage();
+        var yStartPx = Math.round(range[0] * scale);
+        var yEndPx = Math.round(range[1] * scale);
+        var sliceHeightPx = Math.max(1, yEndPx - yStartPx);
+
+        var sliceCanvas = document.createElement("canvas");
+        sliceCanvas.width = canvas.width;
+        sliceCanvas.height = sliceHeightPx;
+        var ctx = sliceCanvas.getContext("2d");
+        ctx.fillStyle = "#ffffff";
+        ctx.fillRect(0, 0, sliceCanvas.width, sliceCanvas.height);
+        ctx.drawImage(canvas, 0, yStartPx, canvas.width, sliceHeightPx, 0, 0, canvas.width, sliceHeightPx);
+
+        var sliceHeightMM = (sliceHeightPx / scale) * mmPerCssPx;
+        doc.addImage(sliceCanvas.toDataURL("image/jpeg", 0.92), "JPEG", PDF_MARGIN_MM, PDF_MARGIN_MM, contentWidthMM, sliceHeightMM);
+
+        doc.setFontSize(9);
+        doc.setTextColor(140, 143, 156);
+        doc.text("Page " + (i + 1) + " of " + ranges.length, PDF_A4_WIDTH_MM / 2, PDF_A4_HEIGHT_MM - 8, { align: "center" });
+      });
+
+      // jsPDF's own doc.save() proved unreliable at actually triggering a download in
+      // some environments (it would return without error but no file would appear) — use
+      // the same manual blob+anchor download used for the .docx export instead, which has
+      // tested reliably.
+      var blob = doc.output("blob");
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement("a");
+      a.href = url;
+      a.download = slugify(state.meta.title) + "-" + label + ".pdf";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 4000);
+      showToast("Downloaded — " + (view === "key" ? "Answer Key" : "Question Paper") + " .pdf");
+    }).catch(function(err){
+      root.style.width = originalWidth;
+      root.classList.remove("pdf-capture");
+      console.error("PDF export failed:", err);
+      showToast("Couldn't generate the PDF — try again");
+    }).finally(function(){
+      el.printBtn.disabled = false;
+    });
+  }
+
+  function renderPaper(){
+    var m = state.meta;
+    el.brandTitle.textContent = m.title ? m.title : "Paper Setter";
+
+    if(!state.questions.length){
+      el.printArea.innerHTML =
+        '<div class="ps-header"><h2>' + escapeHtml(m.title || "Untitled Paper") + '</h2>' +
+        '<div class="ps-meta">' + metaLine(m) + '</div></div>' +
+        '<div class="ps-empty">Add questions on the left to build your paper. It will appear here, formatted and ready to print.</div>';
+      return;
+    }
+
+    var sections = sectionsPresent();
+    var letters = "ABCDEFGH";
+    var total = state.questions.reduce(function(s,q){ return s + (Number(q.marks)||0); }, 0);
+    var html = "";
+    html += '<div class="ps-header"><h2>' + escapeHtml(m.title || "Untitled Paper") + '</h2>';
+    html += '<div class="ps-meta">' + metaLine(m) + '</div></div>';
+    html += '<div class="ps-instructions">This paper contains ' + state.questions.length + ' question' + (state.questions.length===1?'':'s') +
+      ' across ' + sections.length + ' section' + (sections.length===1?'':'s') + '. All questions are compulsory unless stated otherwise.</div>';
+
+    sections.forEach(function(type, si){
+      var qs = state.questions.filter(function(q){ return q.type === type; });
+      var sectionMarks = qs.reduce(function(s,q){ return s + (Number(q.marks)||0); }, 0);
+      html += '<div class="ps-section">';
+      html += '<div class="ps-section-title"><span>Section ' + letters[si] + ' — ' + SECTION_META[type].label + '</span><span class="ps-section-marks">' + sectionMarks + ' marks</span></div>';
+      qs.forEach(function(q, qi){
+        html += (q.type === "passage")
+          ? renderPassageBlock(q, qi+1, currentView === "key")
+          : renderQuestionBlock(q, qi+1, currentView === "key");
+      });
+      html += '</div>';
+    });
+
+    html += '<div class="ps-footer"><span>— End of paper —</span><span>Total: <b class="num">' + total + '</b> marks</span></div>';
+    el.printArea.innerHTML = html;
+  }
+
+  function metaLine(m){
+    var parts = [];
+    if(m.klass) parts.push('Class: <b>' + escapeHtml(m.klass) + '</b>');
+    if(m.subject) parts.push('Subject: <b>' + escapeHtml(m.subject) + '</b>');
+    if(m.duration) parts.push('Time: <b>' + escapeHtml(m.duration) + '</b>');
+    if(m.maxMarks) parts.push('Max Marks: <b>' + escapeHtml(m.maxMarks) + '</b>');
+    if(m.date) parts.push('Date: <b>' + escapeHtml(formatDateDMY(m.date)) + '</b>');
+    return parts.join('<span aria-hidden="true"> &nbsp;|&nbsp; </span>');
+  }
+
+  function imageBlockHtml(q){
+    if(!q.image) return "";
+    return '<div class="ps-image-wrap"><img class="ps-image" src="' + q.image + '" alt="Question image">' +
+      (q.imageCaption ? '<div class="ps-image-caption">' + escapeHtml(q.imageCaption) + '</div>' : '') + '</div>';
+  }
+
+  function optionsListHtml(options, correctIndex, showKey){
+    var html = '<ul class="ps-options">';
+    options.forEach(function(opt, i){
+      var isCorrect = showKey && i === correctIndex;
+      html += '<li class="' + (isCorrect ? "correct" : "") + '"><span class="ps-opt-letter">' + String.fromCharCode(97+i) + ')</span> ' +
+        escapeHtml(opt) + (isCorrect ? ' ✓' : '') + '</li>';
+    });
+    html += '</ul>';
+    return html;
+  }
+
+  function answerBoxHtml(answer){
+    return '<div class="ps-answer-box"><span class="ps-answer-label">Model answer</span>' +
+      (answer ? nl2br(answer) : '<em>No model answer added.</em>') + '</div>';
+  }
+
+  function renderQuestionBlock(q, num, showKey){
+    var html = '<div class="ps-q"><span class="ps-q-num">' + num + '.</span><div class="ps-q-body">';
+    html += '<div class="ps-row">' +
+      '<span class="ps-q-text">' + nl2br(q.text) + '</span>' +
+      '<span class="ps-q-marks">[' + q.marks + ']</span></div>';
+    html += imageBlockHtml(q);
+    if(q.type === "mcq"){
+      html += optionsListHtml(q.options, q.correctIndex, showKey);
+    } else if(showKey){
+      html += answerBoxHtml(q.answer);
+    }
+    html += '</div></div>';
+    return html;
+  }
+
+  function renderPassageBlock(q, num, showKey){
+    var subQuestions = q.subQuestions || [];
+    var totalMarks = subQuestions.reduce(function(s, sq){ return s + (Number(sq.marks) || 0); }, 0);
+    var html = '<div class="ps-q"><span class="ps-q-num">' + num + '.</span><div class="ps-q-body">';
+    html += '<div class="ps-row">' +
+      '<span class="ps-q-text" style="font-style:italic; color:#585e6b;">Read the passage below and answer the questions that follow.</span>' +
+      '<span class="ps-q-marks">[' + totalMarks + ']</span></div>';
+    html += imageBlockHtml(q);
+    html += '<div class="ps-passage-box">' + nl2br(q.text) + '</div>';
+    if(subQuestions.length){
+      html += '<div class="ps-passage-intro">Answer the following questions based on the passage above:</div>';
+    }
+    html += '<div class="ps-subq-list">';
+    subQuestions.forEach(function(sq, i){
+      html += renderSubQuestionBlock(sq, i, showKey);
+    });
+    html += '</div>';
+    html += '</div></div>';
+    return html;
+  }
+
+  function renderSubQuestionBlock(sq, idx, showKey){
+    var letter = String.fromCharCode(97 + idx);
+    var html = '<div class="ps-subq"><span class="ps-subq-num">(' + letter + ')</span><div class="ps-q-body">';
+    html += '<div class="ps-row">' +
+      '<span class="ps-q-text">' + nl2br(sq.text) + '</span>' +
+      '<span class="ps-q-marks">[' + sq.marks + ']</span></div>';
+    if(sq.type === "mcq"){
+      html += optionsListHtml(sq.options, sq.correctIndex, showKey);
+    } else if(showKey){
+      html += answerBoxHtml(sq.answer);
+    }
+    html += '</div></div>';
+    return html;
+  }
+
+  el.viewToggle.addEventListener("click", function(e){
+    var btn = e.target.closest(".view-btn");
+    if(!btn) return;
+    currentView = btn.getAttribute("data-view");
+    Array.prototype.forEach.call(el.viewToggle.querySelectorAll(".view-btn"), function(b){
+      b.classList.toggle("active", b === btn);
+    });
+    updatePrintButtonLabel();
+    renderPaper();
+  });
+
+  el.printBtn.addEventListener("click", downloadPdf);
+
+  el.clearAllBtn.addEventListener("click", function(){
+    confirmDialog({
+      title: "Clear this paper?",
+      message: "This clears the paper title, details and all questions. This can't be undone.",
+      confirmLabel: "Clear all", danger: true
+    }).then(function(ok){
+      if(!ok) return;
+      state = { isSample:false, meta:{title:"",klass:"",subject:"",maxMarks:"",duration:"",date:""}, questions:[] };
+      saveState();
+      fillMetaInputs();
+      resetForm();
+      renderAll();
+      showToast("Paper cleared");
+    });
+  });
+
+  el.dismissSample.addEventListener("click", function(){
+    el.sampleNote.hidden = true;
+  });
+
+  function renderAll(){
+    el.sampleNote.hidden = !state.isSample;
+    renderMarksMeter();
+    renderQuestionList();
+    updatePrintButtonLabel();
+    renderPaper();
+  }
+
+  fillMetaInputs();
+  renderAll();
+
+  // Preserve state across hot re-publishes when the host supports it.
+  try{
+    if(window.claude && window.claude.hot){
+      window.claude.hot.snapshot(function(){ return { state: state }; });
+      if(window.claude.hot.data && window.claude.hot.data.state){
+        state = window.claude.hot.data.state;
+        fillMetaInputs();
+        renderAll();
+      }
+    }
+  }catch(e){ /* hot-reload API not present — ignore */ }
+})();
+</script>
+
+</body>
+</html>
