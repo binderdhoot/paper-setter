@@ -7,7 +7,7 @@ Open [index.html](index.html) — there's nothing to install and no server requi
 ## What it does
 
 - **Paper details** — set title, class, subject, max marks, duration, and date. A marks meter tracks your running total against the max marks as you add questions.
-- **Four question types** — Multiple Choice (with 2–6 options and a marked correct answer), Short Answer, Long Answer, and Passage-based questions with nested sub-questions (each sub-question can itself be MCQ, short, or long).
+- **Five question types** — Multiple Choice (with 2–6 options and a marked correct answer), Fill in the Blank, Short Answer, Long Answer, and Passage-based questions with nested sub-questions (each sub-question can itself be MCQ, fill in the blank, short, or long).
 - **Images** — attach an image (diagram, graph, photo) to any question, with an optional caption.
 - **Question list** — reorder, edit, or delete questions; each entry shows its type, marks, and a text preview.
 - **Live preview** — a formatted, printable paper sheet that updates as you build, with a toggle between the **question paper** view and the **answer key** view.

@@ -10,8 +10,8 @@
   [hidden]{ display:none !important; }
 </style>
 <title>Paper Setter — Free Question Paper &amp; Answer Key Generator</title>
-<meta name="description" content="Build multiple-choice, short-answer, long-answer and passage-based question papers in your browser, with an automatic answer key. Export to PDF or a real .docx file. Free, no sign-up, nothing uploaded to a server.">
-<meta name="keywords" content="question paper generator, question paper maker, exam paper generator, test paper maker, MCQ generator, answer key generator, worksheet generator, free question paper maker, online exam creator, question bank builder">
+<meta name="description" content="Build multiple-choice, fill-in-the-blank, short-answer, long-answer and passage-based question papers in your browser, with an automatic answer key. Export to PDF or a real .docx file. Free, no sign-up, nothing uploaded to a server.">
+<meta name="keywords" content="question paper generator, question paper maker, exam paper generator, test paper maker, MCQ generator, fill in the blank generator, answer key generator, worksheet generator, free question paper maker, online exam creator, question bank builder">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Paper Setter">
 <meta name="google-site-verification" content="3FG0G5N7Lp86V3BuUQg006K-mki4qDBNL1JYmyFkpBc" />
@@ -22,14 +22,14 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Paper Setter">
 <meta property="og:title" content="Paper Setter — Free Question Paper & Answer Key Generator">
-<meta property="og:description" content="Build MCQ, short-answer, long-answer and passage-based question papers with an automatic answer key. Export to PDF or .docx. Free, no sign-up required.">
+<meta property="og:description" content="Build MCQ, fill-in-the-blank, short-answer, long-answer and passage-based question papers with an automatic answer key. Export to PDF or .docx. Free, no sign-up required.">
 <meta property="og:url" content="https://binderdhoot.github.io/paper-setter/">
 <meta property="og:image" content="https://binderdhoot.github.io/paper-setter/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Paper Setter — Free Question Paper & Answer Key Generator">
-<meta name="twitter:description" content="Build MCQ, short-answer, long-answer and passage-based question papers with an automatic answer key. Export to PDF or .docx. Free, no sign-up required.">
+<meta name="twitter:description" content="Build MCQ, fill-in-the-blank, short-answer, long-answer and passage-based question papers with an automatic answer key. Export to PDF or .docx. Free, no sign-up required.">
 <meta name="twitter:image" content="https://binderdhoot.github.io/paper-setter/assets/og-image.png">
 <script type="application/ld+json">
 {
@@ -39,7 +39,7 @@
   "alternateName": "Question Paper Generator",
   "url": "https://binderdhoot.github.io/paper-setter/",
   "image": "https://binderdhoot.github.io/paper-setter/assets/og-image.png",
-  "description": "A free, browser-based question paper builder for teachers and schools. Create multiple-choice, short-answer, long-answer and passage-based questions, attach diagrams, and export a formatted question paper plus a matching answer key as a PDF or .docx file — no sign-up, nothing uploaded to a server.",
+  "description": "A free, browser-based question paper builder for teachers and schools. Create multiple-choice, fill-in-the-blank, short-answer, long-answer and passage-based questions, attach diagrams, and export a formatted question paper plus a matching answer key as a PDF or .docx file — no sign-up, nothing uploaded to a server.",
   "author": { "@type": "Person", "name": "Balwinder", "url": "https://github.com/binderdhoot" },
   "applicationCategory": "EducationalApplication",
   "operatingSystem": "Any (runs in a web browser)",
@@ -47,7 +47,7 @@
   "isAccessibleForFree": true,
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "featureList": [
-    "Multiple-choice, short-answer, long-answer and passage-based questions",
+    "Multiple-choice, fill-in-the-blank, short-answer, long-answer and passage-based questions",
     "Automatic answer key generation",
     "Attach images and diagrams to questions",
     "Live formatted preview",
@@ -65,7 +65,7 @@
     {
       "@type": "Question",
       "name": "What is Paper Setter?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Paper Setter is a free, browser-based question paper generator for teachers and schools. You add multiple-choice, short-answer, long-answer, or passage-based questions, and it builds a formatted, printable question paper plus a matching answer key automatically." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Paper Setter is a free, browser-based question paper generator for teachers and schools. You add multiple-choice, fill-in-the-blank, short-answer, long-answer, or passage-based questions, and it builds a formatted, printable question paper plus a matching answer key automatically." }
     },
     {
       "@type": "Question",
@@ -80,7 +80,7 @@
     {
       "@type": "Question",
       "name": "What question types does it support?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Multiple choice (2–6 options), short answer, long answer, and passage-based questions with nested sub-questions of any of those types." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Multiple choice (2–6 options), fill in the blank, short answer, long answer, and passage-based questions with nested sub-questions of any of those types." }
     },
     {
       "@type": "Question",
@@ -90,7 +90,7 @@
     {
       "@type": "Question",
       "name": "Does it generate an answer key automatically?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Toggle the preview between \"Question Paper\" and \"Answer Key\" views — the answer key highlights correct MCQ options and shows the model answer you entered for short and long answer questions." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Toggle the preview between \"Question Paper\" and \"Answer Key\" views — the answer key highlights correct MCQ options and shows the model answer you entered for fill-in-the-blank, short answer and long answer questions." }
     },
     {
       "@type": "Question",
@@ -337,6 +337,21 @@
   }
   .sample-note button{background:none; border:none; color:inherit; cursor:pointer; display:flex; padding:2px;}
 
+  .about-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:12px; margin-bottom:16px;
+  }
+  .about-card summary{
+    cursor:pointer; list-style:none; padding:12px 16px; font-weight:600; font-size:.9rem; color:var(--ink);
+    display:flex; align-items:center; justify-content:space-between; gap:10px;
+  }
+  .about-card summary::-webkit-details-marker{display:none;}
+  .about-card summary::after{content:"+"; color:var(--ink-muted); font-weight:400; flex:none;}
+  .about-card[open] summary::after{content:"\2212";}
+  .about-card-body{padding:0 16px 16px; font-size:.86rem; color:var(--ink-muted); line-height:1.6;}
+  .about-card-body p{margin:0 0 10px;}
+  .about-card-body ol{margin:0; padding-left:1.2em; display:flex; flex-direction:column; gap:6px;}
+  .about-card-body b{color:var(--ink);}
+
   .paper-sheet{
     background:#ffffff; color:#1b2130; border-radius:10px; box-shadow:var(--shadow);
     border:1px solid var(--border); padding:clamp(20px,4vw,48px); font-family:"Source Serif 4",Georgia,serif;
@@ -456,7 +471,7 @@
 
   @media print{
     html, body{background:#fff !important; padding:0 !important; margin:0 !important; width:auto !important;}
-    .topbar, .builder, .preview-toolbar, .sample-note, .mobile-tabs, .preview-eyebrow, .toast, .tagline, .faq-section, .modal-overlay, .site-footer{display:none !important;}
+    .topbar, .builder, .preview-toolbar, .sample-note, .mobile-tabs, .preview-eyebrow, .toast, .tagline, .about-card, .faq-section, .modal-overlay, .site-footer{display:none !important;}
     .layout{display:block !important;}
     .preview-pane{display:block !important;}
     .paper-sheet{
@@ -492,7 +507,21 @@
     </div>
   </header>
 
-  <p class="tagline">Build multiple-choice, short-answer, long-answer and passage-based question papers with an automatic answer key — free, no sign-up, and nothing is uploaded to a server.</p>
+  <p class="tagline">Build multiple-choice, fill-in-the-blank, short-answer, long-answer and passage-based question papers with an automatic answer key — free, no sign-up, and nothing is uploaded to a server.</p>
+
+  <details class="about-card" data-noc>
+    <summary>What is Paper Setter, and how do I use it?</summary>
+    <div class="about-card-body">
+      <p>Paper Setter is a free, browser-based question paper builder for teachers and schools. Add multiple-choice, fill-in-the-blank, short-answer, long-answer, or passage-based questions, and it builds a formatted, printable question paper plus a matching answer key automatically — nothing you type ever leaves your browser.</p>
+      <ol>
+        <li>Fill in the <b>paper details</b> — title, class, subject, max marks, duration, and date.</li>
+        <li><b>Add questions</b> from the panel below — pick a type, write the question, attach an image if you like, and set the marks. Passage questions let you nest MCQ, fill-in-the-blank, short, or long sub-questions underneath a shared reading passage.</li>
+        <li>Reorder, edit, duplicate, or delete questions in the <b>question list</b>, and watch the marks meter track your target.</li>
+        <li>Check the <b>preview</b> on the right, and toggle between "Question paper" and "Answer key" to see correct options and model answers.</li>
+        <li><b>Export</b> a paginated PDF or a real .docx file with one click — everything is saved automatically to your browser's local storage as you go, so a refresh won't lose your work.</li>
+      </ol>
+    </div>
+  </details>
 
   <div class="mobile-tabs" id="mobileTabs" role="tablist" aria-label="Section">
     <button type="button" class="mobile-tab active" data-target="build" role="tab" aria-selected="true"></button>
@@ -533,6 +562,7 @@
         <h2 id="formHeading"><span class="step-badge">2</span>Add a question</h2>
         <div class="type-tabs" id="typeTabs">
           <button type="button" class="type-tab active" data-type="mcq"></button>
+          <button type="button" class="type-tab" data-type="blank"></button>
           <button type="button" class="type-tab" data-type="short"></button>
           <button type="button" class="type-tab" data-type="long"></button>
           <button type="button" class="type-tab" data-type="passage"></button>
@@ -579,6 +609,7 @@
             <div class="subq-editor">
               <div class="type-tabs" id="subTypeTabs">
                 <button type="button" class="type-tab active" data-subtype="mcq"></button>
+                <button type="button" class="type-tab" data-subtype="blank"></button>
                 <button type="button" class="type-tab" data-subtype="short"></button>
                 <button type="button" class="type-tab" data-subtype="long"></button>
               </div>
@@ -654,7 +685,7 @@
   <div class="faq-list">
     <details>
       <summary>What is Paper Setter?</summary>
-      <p>Paper Setter is a free, browser-based question paper generator for teachers and schools. You add multiple-choice, short-answer, long-answer, or passage-based questions, and it builds a formatted, printable question paper plus a matching answer key automatically.</p>
+      <p>Paper Setter is a free, browser-based question paper generator for teachers and schools. You add multiple-choice, fill-in-the-blank, short-answer, long-answer, or passage-based questions, and it builds a formatted, printable question paper plus a matching answer key automatically.</p>
     </details>
     <details>
       <summary>Is Paper Setter free to use?</summary>
@@ -666,7 +697,7 @@
     </details>
     <details>
       <summary>What question types does it support?</summary>
-      <p>Multiple choice (2–6 options), short answer, long answer, and passage-based questions with nested sub-questions of any of those types.</p>
+      <p>Multiple choice (2–6 options), fill in the blank, short answer, long answer, and passage-based questions with nested sub-questions of any of those types.</p>
     </details>
     <details>
       <summary>Can I add images or diagrams to a question?</summary>
@@ -674,7 +705,7 @@
     </details>
     <details>
       <summary>Does it generate an answer key automatically?</summary>
-      <p>Yes. Toggle the preview between "Question Paper" and "Answer Key" views — the answer key highlights correct MCQ options and shows the model answer you entered for short and long answer questions.</p>
+      <p>Yes. Toggle the preview between "Question Paper" and "Answer Key" views — the answer key highlights correct MCQ options and shows the model answer you entered for fill-in-the-blank, short answer and long answer questions.</p>
     </details>
     <details>
       <summary>Can I export the paper as a PDF?</summary>
@@ -723,12 +754,13 @@
   var STORAGE_KEY = "paperSetter.state.v1";
   var SECTION_META = {
     mcq:    { label: "Multiple Choice Questions" },
+    blank:  { label: "Fill in the Blanks" },
     passage:{ label: "Passage-Based Questions" },
     short:  { label: "Short Answer Questions" },
     long:   { label: "Long Answer Questions" }
   };
-  var TYPE_ORDER = ["mcq","passage","short","long"];
-  var TYPE_LABEL = { mcq:"MCQ", short:"Short", long:"Long", passage:"Passage" };
+  var TYPE_ORDER = ["mcq","blank","passage","short","long"];
+  var TYPE_LABEL = { mcq:"MCQ", blank:"Fill Blank", short:"Short", long:"Long", passage:"Passage" };
 
   // ---- tiny inline icon set (stroke-based, 24x24 viewbox) ----
   function icon(paths, size){
@@ -752,6 +784,7 @@
     doc:        icon('<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/>'),
     list:       icon('<path d="M8 6h13"/><path d="M8 12h13"/><path d="M8 18h13"/><circle cx="3.2" cy="6" r="1"/><circle cx="3.2" cy="12" r="1"/><circle cx="3.2" cy="18" r="1"/>', 18),
     shortLine:  icon('<line x1="4" y1="8" x2="15" y2="8"/><line x1="4" y1="16" x2="20" y2="16"/>', 18),
+    blank:      icon('<line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="17" x2="8" y2="17"/><line x1="14" y1="17" x2="21" y2="17"/>', 18),
     longLines:  icon('<line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="13" y2="18"/>', 18),
     download:   icon('<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/>')
   };
@@ -806,6 +839,8 @@
         { id: uid(), type:"mcq", text:"Study the diagram of a simple pendulum shown above. At which labelled point is the pendulum's gravitational potential energy at its maximum?", marks:1,
           options:["Point A only","Point B only","Points A and C","It is the same at all three points"], correctIndex:2, answer:"",
           image: PENDULUM_IMAGE, imageCaption:"A simple pendulum — points A, B and C mark the bob's position during one swing." },
+        { id: uid(), type:"blank", text:"A force that opposes relative motion between two surfaces in contact is called ______.", marks:1,
+          options:[], correctIndex:0, answer:"Friction" },
         { id: uid(), type:"passage", marks:3,
           text:"Friction is a force that opposes relative motion between two surfaces in contact. It arises because no surface is perfectly smooth — even surfaces that look polished have microscopic irregularities that interlock with each other. Friction can be reduced by polishing surfaces, using lubricants such as oil, or by using ball bearings, which convert sliding friction into rolling friction, a force that is much smaller.",
           image: null, imageCaption:"",
@@ -925,6 +960,7 @@
   el.dismissSample.setAttribute("aria-label","Dismiss");
   var typeTabDefs = [
     {type:"mcq", label:"MCQ", icon:ICONS.list},
+    {type:"blank", label:"Fill in blank", icon:ICONS.blank},
     {type:"short", label:"Short answer", icon:ICONS.shortLine},
     {type:"long", label:"Long answer", icon:ICONS.longLines},
     {type:"passage", label:"Passage", icon:ICONS.book}
@@ -934,6 +970,7 @@
   });
   var subTypeTabDefs = [
     {type:"mcq", label:"MCQ", icon:ICONS.list},
+    {type:"blank", label:"Fill blank", icon:ICONS.blank},
     {type:"short", label:"Short", icon:ICONS.shortLine},
     {type:"long", label:"Long", icon:ICONS.longLines}
   ];
@@ -1042,11 +1079,13 @@
   // ---- type tabs ----
   function updateFormVisibility(){
     el.mcqBlock.hidden = formType !== "mcq";
-    el.answerFieldWrap.hidden = !(formType === "short" || formType === "long");
+    el.answerFieldWrap.hidden = !(formType === "blank" || formType === "short" || formType === "long");
     el.passageBlock.hidden = formType !== "passage";
     el.marksFieldWrap.hidden = formType === "passage";
     el.qTextLabel.textContent = formType === "passage" ? "Passage text" : "Question text";
-    el.qText.placeholder = formType === "passage" ? "Paste or type the reading passage here…" : "Type the question here…";
+    el.qText.placeholder = formType === "passage" ? "Paste or type the reading passage here…"
+      : formType === "blank" ? "e.g. The capital of France is ______."
+      : "Type the question here…";
     el.qText.rows = formType === "passage" ? 5 : 3;
   }
   el.typeTabs.addEventListener("click", function(e){
